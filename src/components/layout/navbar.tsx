@@ -34,7 +34,7 @@ const Navbar = () => {
               onClick={handleClick}
               className="rounded-full w-12 h-12 text-center  bg-white text-black p-3"
             >
-              M
+              R
             </button>
           ) : (
             <button
