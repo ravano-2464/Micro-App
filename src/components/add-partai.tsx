@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../index.css';
 import Navbar2 from './navbar2';
 import Nazi from '../assets/images/nazi-logo.jpg';
+import Icon from '../assets/images/skull.ico';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -81,8 +82,3 @@ const AddPartai: React.FC = () => {
 };
 
 export default AddPartai;
-
-
-
-
-

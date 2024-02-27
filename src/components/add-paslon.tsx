@@ -81,8 +81,3 @@ const AddPaslon: React.FC = () => {
 };
 
 export default AddPaslon;
-
-
-
-
-
