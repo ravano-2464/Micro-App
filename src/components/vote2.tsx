@@ -44,7 +44,7 @@ const Vote2: React.FC = () => {
                                 <h1>25%</h1>
                             </div>
                         </div>
-                        <div className="text-3xl font-bold text-red text-center">
+                        <div className="flex justify-center text-4xl font-bold text-center text-red-600 py-10">
                             <br />
                             <h1>ANDA SUDAH MEMILIH !!!</h1>
                             <br/>
