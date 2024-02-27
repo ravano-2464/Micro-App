@@ -10,10 +10,10 @@ import { useNavigate } from 'react-router-dom';
 const Admin: React.FC = () => {
 
   const data = [
-    { no: 1, nama: 'a', alamat: 'Itaewon', jenisKelamin: 'Laki-laki', paslon: 'ADOLF HITLER' },
-    { no: 2, nama: 'Lee Dong Wook', alamat: 'Seoul', jenisKelamin: 'Laki-laki', paslon: 'SOEHARTO' },
-    { no: 3, nama: 'Ning Ning', alamat: 'Harbin', jenisKelamin: 'Perempuan', paslon: 'HIROHITO' },
-    { no: 4, nama: 'Lee Heesung', alamat: 'Daegu', jenisKelamin: 'Laki-laki', paslon: 'HIROHITO' },
+    { no: 1, nama: 'Kim Jong Un', alamat: 'Kora Utara', jenisKelamin: 'Laki-laki', paslon: 'Adolf Hitler' },
+    { no: 2, nama: 'Megawati', alamat: 'Indonesia', jenisKelamin: 'Perempuan', paslon: 'Soeharto' },
+    { no: 3, nama: 'Kiichiro Toyoda', alamat: 'Jepang', jenisKelamin: 'Laki-Laki', paslon: 'Hirohito' },
+    { no: 4, nama: 'Yoshisuke Aikawa', alamat: 'Jepang', jenisKelamin: 'Laki-laki', paslon: 'Hirohito' },
   ];
 
   return (
