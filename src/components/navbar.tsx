@@ -28,9 +28,7 @@ function Navbar () {
             <button className='text-black bg-white rounded-full w-7' onClick={handleClick}><a href='/admin'> R </a></button>
           </div>
         ) : (
-          <div>
-            <button className="text-black rounded-s-none bg-white 	border-radius: 0.375rem w-28" onClick={handleClick}>Login</button>
-          </div>
+          <button onClick={handleClick} className="btn bg-white hover:bg-slate-200 text-black font-bold px-8 py-1 rounded-md"> LOGIN </button>
         )}   
          </ul>
     </div>
