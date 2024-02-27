@@ -8,9 +8,6 @@ const Navbar2: React.FC = () => {
       navigate('/');
   };
   
- 
-   
-
   return (
     <div className="flex items-center justify-between h-16 px-8 bg-black"> 
       <div className="flex items-center space-x-8"> 
