@@ -1,64 +1,80 @@
-import { useState } from "react";
-import Navbar from "./components/layout/navbar";
-import HeroSection from "./components/layout/heroSection";
-import Card from "./components/layout/card";
-import Statement from "./components/layout/statementSection";
-import Address from "./components/layout/address";
-import Footer from "./components/layout/footer";
-import Banner from "./components/layout/banner";
+import Home from './components/home.tsx';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Detail from './components/detail.tsx';
+import Vote from './components/vote.tsx';
+import Vote2 from './components/vote2.tsx';
+import Modal from './components/modal.tsx';
+import Navbar2 from './components/navbar2.tsx';
+import AddPartai from './components/add-partai.tsx';
+import Admin from './components/admin.tsx';
+import Add from './components/add-paslon.tsx';
+import ListPaslon from './components/list-paslon.tsx';
+import ListPartai from './components/list-partai.tsx';
+import Login from './components/login.tsx';
+import Register from './components/register.tsx';
+import './index.css';
+
 
 function App() {
   return (
-    <div className="bg-dasar">
-      {/* Navbar */}
-      <Navbar />
-      {/* navbar */}
+    <Router>
 
-      <div className="px-36">
-        {/* Hero Section */}
-        <HeroSection />
-        {/* hero  */}
+      <Routes>
+        <Route path="/register"
 
-        {/* Sec-2 */}
-        <section className="mt-20">
-          <div className="grid grid-cols-3 gap-5 ">
-            <Banner />
-            <Card />
-          </div>
-        </section>
-        {/* sec-2 */}
+          element={<Register />} />
+        <Route path="/login"
 
-        {/* Sec-3*/}
-        <section className="mt-6">
-          <div className="grid grid-cols-3 gap-5">
-            <Card />
-            <Card />
-            <Card />
-          </div>
-        </section>
-        {/* sec-3*/}
-      </div>
+          element={<Login />} />
 
-      {/* Sec-4 */}
-      <section className="bg-white mt-24">
-        <Statement />
-      </section>
-      {/* sec-4 */}
+        <Route path="/detail"
 
-      {/* Sec-5 */}
-      <section className="bg-black">
-        <Address />
-      </section>
-      {/* sec-5 */}
+          element={<Detail />} />
+        <Route path="/list-paslon"
 
-      <div className="h-1 bg-white"></div>
+          element={<ListPaslon />} />
 
-      {/* Sec-6 */}
-      <footer className="bg-black">
-        <Footer />
-      </footer>
-      {/* sec-6 */}
-    </div>
+        <Route path="/list-partai"
+
+          element={<ListPartai />} />
+
+
+        <Route path="/"
+
+          element={<Home />} />
+
+        <Route path="/vote"
+
+          element={<Vote />} />
+
+        <Route path="/admin"
+
+          element={<Admin />} />
+
+        <Route path="/navbar2"
+
+          element={<Navbar2 />} />
+
+        <Route path="/vote2"
+
+          element={<Vote2 />} />
+
+        <Route path="/modal"
+
+          element={<Modal />} />
+
+        <Route path="/add-paslon"
+
+          element={<Add />} />
+
+        <Route path="/add-partai"
+
+          element={<AddPartai />} />
+
+
+      </Routes>
+
+    </Router>
   );
 }
 

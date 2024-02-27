@@ -1,11 +1,43 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-.gradient {
+.gradient{
   background: linear-gradient(
     260.13deg,
     #5c1e03 22.59%,
-    rgba(117, 6, 6, 0.540837) 109.46%
-  );
+    rgba(117, 6, 6, 0.540837) 109.46%);
+}
+
+.body{
+  background-color: #cecece;  
+}
+
+.bgc{
+  background-color: white;
+}
+
+.red-KPU{
+  background-color: red;
+}
+
+.text{
+  color: #5d5a00;
+}
+
+.bgc2{
+  background-color: rgba(94, 90, 0, 1);
+}
+.img{
+  width: 150px;  
+  margin-top: 13%; 
+}
+.cb{
+  outline-color: #5d5a00;
+}
+.container{
+  background-color: #5d5a00;
+  color: antiquewhite;
+  width: 100%;
 }
