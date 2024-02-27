@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from './navbar.tsx';
 import Footer from './footer.tsx';
@@ -8,9 +7,8 @@ import { useNavigate } from 'react-router-dom';
 
 const Vote2: React.FC = () => {
     return (
-
         <>
-            <Navbar />
+             <Navbar />
             <div className="relative body">
             <div className="p-8 bg-white max-w-[900px] mx-auto ">
                     <div className="py-2 text-5xl font-black text-center">
@@ -46,49 +44,49 @@ const Vote2: React.FC = () => {
                                 <h1>25%</h1>
                             </div>
                         </div>
-                        <div className="text-3xl font-bold text-red">
-                        <h1 >ANDA SUDAH MEMILIH !!!</h1>
+                        <div className="text-3xl font-bold text-red text-center">
+                            <br />
+                            <h1>ANDA SUDAH MEMILIH !!!</h1>
+                            <br/>
                         </div>
-                        </div>
-                        <div className=" h-[500px] bg-slate-300 ps-[100px]">
-                        <h2 className="mt-10 mb-2 text-5xl font-black text-center text ">INFO PASLON</h2>
-                            <div className="flex flex-row flex justify-center  mx-auto mt-10 p-4 bg-white rounded-lg shadow-md w-[650px] h-[494]">
-                             <div className="mt-10 img">
-                                <img src={hirohito} alt="hirohito"></img>
+                    </div>
+                    <div className=" h-[700px] bg-slate-300 flex justify-center items-center">
+                        <div>
+                            <h2 className="mt-10 mb-2 text-5xl font-black text-center text ">INFO PASLON</h2>
+                            <div className="flex flex-row justify-center mx-auto mt-10 p-4 bg-white rounded-lg shadow-md w-[650px] h-[494]">
+                                <div className="mt-6 img">
+                                    <img src={hirohito} alt="hirohito" />
                                 </div>
                                 <div className="flex flex-col ml-10">
-                                <p className="mb-2 font-bold -lg">Nomor Urut : 1</p>
-                                <p className="mb-4 text-3xl font-bold ">HIROHITO</p>
-                                <h3 className="mb-2 font-bold text-">Visi & Misi :</h3>
-                                <ul className="mb-4 text-lg list-disc list-inside">
-                                    <li>Memindahkan Indonesia ke Isekai.</li>
-                                    <li>Nonton anime 3x sehari.</li>
-                                    <li>Melakukan peresapan pada budaya jepang.</li>
-                                </ul>
-                                <h3 className="mb-2 text-lg font-bold">Koalisi :</h3>
-                                <ul className="text-lg list-disc list-inside">
-                                    <li>Partai Persatuan Wiboo.</li>
-                                    <li>Partai Redbull.</li>
-                                    <li>Partai Black Magic.</li>
-                                </ul>
+                                    <p className="mb-2 font-bold -lg">Nomor Urut : 1</p>
+                                    <p className="mb-4 text-3xl font-bold">HIROHITO</p>
+                                    <h3 className="mb-2 font-bold">Visi & Misi :</h3>
+                                    <ul className="mb-4 text-lg list-disc list-inside">
+                                        <li>Memindahkan Indonesia ke Isekai.</li>
+                                        <li>Nonton anime 3x sehari.</li>
+                                        <li>Melakukan peresapan pada budaya jepang.</li>
+                                    </ul>
+                                    <h3 className="mb-2 text-lg font-bold">Koalisi :</h3>
+                                    <ul className="text-lg list-disc list-inside">
+                                        <li>Partai Persatuan Wiboo.</li>
+                                        <li>Partai Redbull.</li>
+                                        <li>Partai Black Magic.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center text-4xl font-bold text-center text-red-600 py-28">
-                            
-                                <h1>
-                                    PILIH BERDASARKAN GACHA TIDAK USAH SERIUS
-                                    <br/>YANG PENTING TIDAK MELEGALKAN SLOT
-                                </h1>
-                           
-
-                        </div>
                     </div>
-                
+                    <div className="flex justify-center text-4xl font-bold text-center text-red-600 py-28">
+                        <h1>
+                            PILIH BERDASARKAN GACHA TIDAK USAH SERIUS
+                            <br />YANG PENTING TIDAK MELEGALKAN SLOT
+                        </h1>
+                    </div>
+                </div>
             </div>
             <Footer />
         </>
-    )
-
+    );
 }
+
 export default Vote2;

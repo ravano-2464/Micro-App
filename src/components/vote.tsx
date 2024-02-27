@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Vote: React.FC = () => {
     const navigate = useNavigate();
+    
     const goToSModal = () => {
         navigate('/modal');
     };
@@ -52,7 +53,7 @@ const Vote: React.FC = () => {
                         </div>
                         <br />
                     </div>
-                    <div className="flex justify-center items-center h-[650px] bg-slate-300">
+                    <div className="flex justify-center items-center h-[700px] bg-slate-300">
                         <div>
                             <h2 className="mt-10 mb-2 text-5xl font-black text-center text">INFO PASLON</h2>
                             <div className="flex flex-row justify-center mx-auto mt-10 p-4 bg-white rounded-lg shadow-md w-[650px] h-[494]">
