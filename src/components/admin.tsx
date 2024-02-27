@@ -25,8 +25,8 @@ const Admin: React.FC = () => {
         </div>
         <div className="flex flex-row justify-center space-x-96  items-center mt-10">
           <h1 className="text-center text-6xl font-bold bg-yellow-300 border rounded-full border-yellow-500 border-8 w-20 h-20">1</h1>
-          <h1  className="text-center text-6xl font-bold bg-cyan-300 border rounded-full border-cyan-700 border-8 w-20 h-20">2</h1>
-          <h1   className="text-center text-6xl font-bold bg-red-400 border rounded-full border-red-900 border-8 w-20 h-20">3</h1>
+          <h1 className="text-center text-6xl font-bold bg-cyan-300 border rounded-full border-cyan-700 border-8 w-20 h-20">2</h1>
+          <h1 className="text-center text-6xl font-bold bg-red-400 border rounded-full border-red-900 border-8 w-20 h-20">3</h1>
         </div>
         <div className="flex justify-between w-full mt-10 space-x-3">
           <div className="p-4 shadow-md  rounded-xl bg-yellow-300">
