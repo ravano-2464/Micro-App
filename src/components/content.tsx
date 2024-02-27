@@ -1,8 +1,5 @@
 import "../index.css";
 import { Link } from 'react-router-dom';
-
-
-
 import Dumbways from "../assets/images/dumbways.png";
 import Background from "../assets/images/rtl.png";
 import Kotak from "../assets/images/kotak.png";
@@ -10,12 +7,12 @@ import KPU from "../assets/images/KPU.png";
 
 const Content: React.FC = () => {
   return (
-    <>
+    <section className="gradient mt-10 rounded-2xl pb-10">
       <div className="body content pt-28">
-        <div className="relative mx-32 ">
+        <div className="relative">
           <img src={Background} alt="Background" />
           <div className="absolute top-0 left-0">
-            <img className="h-56" src={Dumbways} alt="Dumbways" />
+            <img className="h-64 w-96 opacity-50" src={Dumbways} alt="Dumbways" />
           </div>
           <div className="absolute top-0 right-24">
             <img className="w-80 h-96" src={Kotak} alt="Kotak Suara" />
