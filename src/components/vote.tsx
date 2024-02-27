@@ -50,8 +50,8 @@ const Vote: React.FC = () => {
                                 <h1>25%</h1>
                             </div>
                         </div>
-                        <div className="bgc2 flex justify-center w-[466px] p-4 text-[32px] h-[67px] rounded-lg mt-10 font-bold  hover:bg-lime-700">
-                            <button onClick={goToSModal}>MASUKAN SUARAMU</button>
+                        <div className="bgc2 flex justify-center w-[466px] p-4 rounded-lg mt-10 font-bold hover:bg-lime-700">
+                           <button onClick={goToSModal} className="text-[32px] text-center">MASUKAN SUARAMU</button>
                         </div>
                         </div>
                         <div className=" h-[500px] bg-slate-300 ps-[100px]">
