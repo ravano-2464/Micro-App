@@ -40,7 +40,7 @@ const Vote: React.FC = () => {
                                     cy="50%"
                                     outerRadius={100}
                                     fill="#8884d8"
-                                    label={({ name }) => `${name} (${data.find(item => item.name === name)?.value}%)`} // Menampilkan nama kandidat dan persentase di dalam diagram pie
+                                    label={({ name }) => `${name} (${data.find(item => item.name === name)?.value}%)`} 
                                 >
                                     {
                                         data.map((entry, index) => (
