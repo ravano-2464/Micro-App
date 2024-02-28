@@ -13,9 +13,9 @@ const Vote2: React.FC = () => {
     };
 
     const data = [
-        { name: 'HIROHITO', value: 78, color: '#FF5733' },
+        { name: 'SOEHARTO', value: 25, color: '#4682B4' },
         { name: 'ADOLF HITLER', value: 45, color: '#FFD700' }, 
-        { name: 'SOEHARTO', value: 25, color: '#4682B4' } 
+        { name: 'HIROHITO', value: 78, color: '#FF5733' } 
     ];
 
     return (
