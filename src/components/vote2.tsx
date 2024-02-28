@@ -1,18 +1,56 @@
-import React from "react";
+import React from 'react';
 import Navbar from './navbar.tsx';
 import Footer from './footer.tsx';
 import hirohito from '../assets/images/hirohito.jpg';
-import '../index.css';
 import { useNavigate } from 'react-router-dom';
+import { ResponsiveContainer, PieChart, Pie, Tooltip, Legend, Cell } from 'recharts';
 
 const Vote2: React.FC = () => {
+    const navigate = useNavigate();
+    
+    const goToSModal = () => {
+        navigate('/modal');
+    };
+
+    const data = [
+        { name: 'HIROHITO', value: 78, color: '#FF5733' },
+        { name: 'ADOLF HITLER', value: 45, color: '#FFD700' }, 
+        { name: 'SOEHARTO', value: 25, color: '#4682B4' } 
+    ];
+
     return (
         <>
-             <Navbar />
+            <Navbar />
             <div className="relative body">
-            <div className="p-8 bg-white max-w-[900px] mx-auto ">
+                <div className="p-8 bg-white max-w-[900px] mx-auto ">
                     <div className="py-2 text-5xl font-black text-center">
                         <h1>INFO PEMILU TER-UPDATE</h1>
+                        <br />
+                        <label>HASIL :</label>
+                    </div>
+                    <div className="flex justify-center items-center mb-20">
+                        <ResponsiveContainer width="80%" height={400}>
+                            <PieChart>
+                                <Pie
+                                    data={data}
+                                    dataKey="value"
+                                    nameKey="name"
+                                    cx="50%"
+                                    cy="50%"
+                                    outerRadius={100}
+                                    fill="#8884d8"
+                                    label={({ name, value }) => `${name} (${value}%)`}
+                                >
+                                    {
+                                        data.map((entry, index) => (
+                                            <Cell key={`cell-${index}`} fill={entry.color} />
+                                        ))
+                                    }
+                                </Pie>
+                                <Tooltip />
+                                <Legend />
+                            </PieChart>
+                        </ResponsiveContainer>
                     </div>
                     <div className="flex flex-col items-center gap-4 mt-7 md:flex-col md:justify-between">
                         <div className="flex flex-row w-[657px] p-4 bg-red-400 shadow-red-400 shadow-lg rounded-2xl h-[]146px">
@@ -22,7 +60,6 @@ const Vote2: React.FC = () => {
                             <div className="ml-[30px] text-4xl font-black text-left text-red-800 ">
                                 <h1>HIROHITO</h1>
                                 <h1>78%</h1>
-
                             </div>
                         </div>
                         <div className="flex flex-row w-[657px] p-4 bg-amber-300 shadow-amber-300 shadow-lg mt-7 rounded-2xl h-[]146px">
@@ -32,7 +69,6 @@ const Vote2: React.FC = () => {
                             <div className="ml-[30px] text-4xl font-black text-left text-red-800 ">
                                 <h1>ADOLF HITLER</h1>
                                 <h1>45%</h1>
-
                             </div>
                         </div>
                         <div className="flex flex-row w-[657px] p-4  bg-sky-400 shadow-sky-400  shadow-lg mt-7 rounded-2xl h-[]146px">
