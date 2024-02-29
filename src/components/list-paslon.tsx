@@ -6,7 +6,7 @@ const ListPaslon: React.FC = () => {
     {
       no: 1,
       image: 'src/assets/images/hitler.jpg',
-      name: 'ADOLF HITLER',
+      name: 'Adolft Hitler',
       visimisi: '',
       koalisi: '',
     },
