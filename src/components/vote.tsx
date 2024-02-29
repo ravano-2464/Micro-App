@@ -24,10 +24,10 @@ const Vote: React.FC = () => {
             <Navbar />
             <div className="relative body">
                 <div className="p-8 bg-white max-w-[900px] mx-auto ">
-                    <div className="py-2 text-5xl font-black text-center">
+                    <div className="py-2 text-5xl font-black text-center text-lime"> {/* Mengubah warna teks menjadi lime */}
                         <h1>INFO PEMILU TER-UPDATE</h1>
                         <br />
-                        <label>HASIL :</label>
+                        <label>Hasil :</label>
                     </div>
                     <div className="flex justify-center items-center mb-20">
                         <ResponsiveContainer width="80%" height={400}>
@@ -54,7 +54,7 @@ const Vote: React.FC = () => {
                         </ResponsiveContainer>
                     </div>
                     <div className="flex flex-col items-center gap-4 mt-7 md:flex-col md:justify-between">
-                        <div className="flex flex-row w-[657px] p-4 bg-red-400 shadow-red-400 shadow-lg rounded-2xl h-[]146px">
+                        <div className="flex flex-row w-[657px] p-4 bg-red-400 shadow-red-400 shadow-lg rounded-2xl h-[146px]">
                             <div className="flex items-center w-[80px] text-center bg-red-900 border-4 rounded-md h-[112px] border-box">
                                 <p className="text-xl font-bold text-white ">No. Paslon 3</p>
                             </div>
@@ -63,7 +63,7 @@ const Vote: React.FC = () => {
                                 <h1>78%</h1>
                             </div>
                         </div>
-                        <div className="flex flex-row w-[657px] p-4 bg-amber-300 shadow-amber-300 shadow-lg mt-7 rounded-2xl h-[]146px">
+                        <div className="flex flex-row w-[657px] p-4 bg-amber-300 shadow-amber-300 shadow-lg mt-7 rounded-2xl h-[146px]">
                             <div className="flex items-center w-[80px] text-center bg-red-900 border-4 rounded-md h-[112px] border-box">
                                 <p className="text-xl font-bold text-white ">No. Paslon 1</p>
                             </div>
@@ -72,7 +72,7 @@ const Vote: React.FC = () => {
                                 <h1>45%</h1>
                             </div>
                         </div>
-                        <div className="flex flex-row w-[657px] p-4  bg-sky-400 shadow-sky-400  shadow-lg mt-7 rounded-2xl h-[]146px">
+                        <div className="flex flex-row w-[657px] p-4  bg-sky-400 shadow-sky-400  shadow-lg mt-7 rounded-2xl h-[146px]">
                             <div className="flex items-center w-[80px] text-center bg-red-900 border-4 rounded-md h-[112px] border-box">
                                 <p className="text-xl font-bold text-white ">No. Paslon 2</p>
                             </div>
@@ -86,7 +86,7 @@ const Vote: React.FC = () => {
                         </div>
                         <br />
                     </div>
-                    <div className="flex justify-center items-center h-[700px] bg-slate-300">
+                    <div className="flex justify-center items-center h-[650px] bg-slate-300">
                         <div>
                             <h2 className="mt-10 mb-2 text-5xl font-black text-center text">INFO PASLON</h2>
                             <div className="flex flex-row justify-center mx-auto mt-10 p-4 bg-white rounded-lg shadow-md w-[650px] h-[494]">

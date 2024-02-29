@@ -9,9 +9,9 @@ const ListPartai: React.FC = () => {
     {
       no: 1,
       logo: 'src/assets/images/logo.jpg',
-      ketua: 'Bang Shin Hyuk',
+      ketua: 'Adolft Hitler',
       visimisi: '',
-      alamat: 'Seoul South Korea',
+      alamat: 'German',
     },
 
   ];
@@ -41,9 +41,9 @@ const ListPartai: React.FC = () => {
                 <td className="px-6 py-4 whitespace-nowrap border border-slate-700">{item.ketua}</td>
                 <td className="px-6 py-4 whitespace-nowrap border border-slate-700">{item.visimisi}
                 <div className="flex flex-col ">
-                  <p>1.Mengadakan konser K-Pop tiap bulan dengan harga terjangkau  {item.visimisi}</p>
-                  <p>2.Mengadakan Comeback di Indonesia {item.visimisi}</p>
-                  <p>3.Fanmeet GRATIS tanpa batas {item.visimisi}</p>
+                  <p>1.Mengadakan Perang Dunia Ketiga Secara Terus Menerus{item.visimisi}</p>
+                  <p>2.Mengadakan Kerja Paksa Dan Tanam Paksa{item.visimisi}</p>
+                  <p>3.Memberikan Komisi Yang Sangat Kecil Untuk Rakyat Rendah{item.visimisi}</p>
                 </div></td>
                 <td className="px-6 py-4 whitespace-nowrap border border-slate-700">{item.alamat}
                 </td>
