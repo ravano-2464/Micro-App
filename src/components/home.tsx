@@ -3,7 +3,7 @@ import Footer from './footer.tsx';
 import Navbar from './navbar.tsx';
 import { useNavigate } from 'react-router-dom';
 import Dumbways from "../assets/images/dumbways.png";
-import Background from "../assets/images/rtl.png";
+import Background from "../assets/images/background.png";
 import Kotak from "../assets/images/kotak.png";
 import KPU from "../assets/images/KPU.png";
 

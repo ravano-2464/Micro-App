@@ -24,7 +24,7 @@ const Vote: React.FC = () => {
             <Navbar />
             <div className="relative body">
                 <div className="p-8 bg-white max-w-[900px] mx-auto ">
-                    <div className="py-2 text-5xl font-black text-center text-lime"> {/* Mengubah warna teks menjadi lime */}
+                    <div className="py-2 text-5xl font-black text-center text-lime">
                         <h1>INFO PEMILU TER-UPDATE</h1>
                         <br />
                         <label>Hasil :</label>
