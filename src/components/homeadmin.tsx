@@ -1,9 +1,9 @@
-import Navbar2 from './navbar2.tsx';
+import Navbar2 from './navbar2';
 import hitler from '../assets/images/hitler.jpg';
 import hirohito from '../assets/images/hirohito.jpg';
 import soeharto from '../assets/images/soeharto.jpg';
 
-const Admin: React.FC = () => {
+const Admin = () => {
 
   const data = [
     { no: 1, nama: 'Kim Jong Un', alamat: 'North Korea', jenisKelamin: 'Laki-laki', paslon: 'Adolf Hitler'  },
@@ -16,7 +16,7 @@ const Admin: React.FC = () => {
     <>
       <Navbar2 />
       <div className="relative">
-        <div className="flex flex-col mt-10 text-5xl font-black text-center text ">
+        <div className="flex flex-col mt-10 text-5xl font-black text-center">
           <h1>DASHBOARD</h1>
         </div>
         <div className="flex flex-row items-center justify-center mt-10 space-x-96">
@@ -39,17 +39,17 @@ const Admin: React.FC = () => {
           <div className="p-4 shadow-md bg-cyan-300 rounded-xl ">
             <div className="flex items-center justify-between ">
               <div className="flex items-center border rounded-lg">
-                <img src={soeharto} alt="soeharto" />
+                <img src={hitler} alt="hitler" />
               </div>
             </div>
-            <h2 className="ml-4 text-xl font-bold">ADOLF HITLER</h2>
+            <h2 className="ml-4 text-xl font-bold text-align=right">ADOLF HITLER</h2>
             <p className="mb-4 text-lg">Akumulasi :45%
               <br /> Jumlah Vote : 350 Voters</p>
           </div>
           <div className="p-4 bg-red-400 shadow-md rounded-xl ">
             <div className="flex items-center justify-between">
               <div className="flex items-center border rounded-lg">
-                <img src={hitler} alt="hitler" />
+                <img src={soeharto} alt="soeharto" />
               </div>
             </div>
             <h2 className="ml-4 text-xl font-bold">SOEHARTO</h2>
@@ -58,11 +58,11 @@ const Admin: React.FC = () => {
           </div>
         </div>
         <div className="w-full mt-20 bg-zinc-200 h-[450px]">
-          <div className="flex justify-center text-5xl font-black text-black text center">
+          <div className="flex justify-center text-5xl font-black text-black text-center">
             <h1>LIST VOTER</h1>
           </div>
           <div className="flex mx-auto mt-10 overflow-x-auto">
-            <table className="table-auto table-auto w-[875px] h-[200px] mx-auto divide-y divide-gray-200 border-collapse border border-slate-900">
+            <table className="table-auto w-[875px] h-[200px] mx-auto divide-y divide-gray-200 border-collapse border border-slate-900">
               <thead>
                 <tr>
                   <th className="px-6 py-3 font-black tracking-wider text-left text-black uppercase border text-l border-slate-600">No</th>
