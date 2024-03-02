@@ -1,15 +1,15 @@
 import Navbar2 from './navbar2.tsx';
-import hitler from '../assets/images/hitler.jpeg';
+import hitler from '../assets/images/hitler.jpg';
 import hirohito from '../assets/images/hirohito.jpg';
 import soeharto from '../assets/images/soeharto.jpg';
 
 const Admin: React.FC = () => {
 
   const data = [
-    { no: 1, nama: 'Park Seo Joon', alamat: 'Itaewon', jenisKelamin: 'Laki-laki', paslon: 'Shim Jae Yoon'  },
-    { no: 2, nama: 'Lee Dong Wook', alamat: 'Seoul', jenisKelamin: 'Laki-laki', paslon: 'Shim Jae Yoon' },
-    { no: 3, nama: 'Ning Ning', alamat: 'Harbin', jenisKelamin: 'Perempuan',  paslon: 'Lee Heesung' },
-    { no: 4, nama: 'Kim Mingyu', alamat: 'Daegu', jenisKelamin: 'Laki-laki',  paslon: 'Yang Jungwon'  },
+    { no: 1, nama: 'Kim Jong Un', alamat: 'North Korea', jenisKelamin: 'Laki-laki', paslon: 'Adolf Hitler'  },
+    { no: 2, nama: 'Megawati', alamat: 'Indonesia', jenisKelamin: 'Perempuan', paslon: 'Soeharto' },
+    { no: 3, nama: 'Yoshisuke Aikawa', alamat: 'Japan', jenisKelamin: 'Laki-Laki',  paslon: 'Hirohito' },
+    { no: 4, nama: 'Kiichiro Toyoda', alamat: 'Japan', jenisKelamin: 'Laki-laki',  paslon: 'Hirohito'  },
   ];
 
   return (
