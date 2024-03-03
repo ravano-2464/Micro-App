@@ -1,9 +1,6 @@
 import Navbar2 from "./navbar2";
 import React from "react";
 
-
-
-
 const ListPartai: React.FC = () => {
   const data = [
     {
