@@ -36,7 +36,8 @@ const Admin: React.FC = () => {
               </div>
             </div>
             <h2 className="ml-4 text-xl font-bold">HIROHITO</h2>
-            <p className="mb-4 text-lg">Akumulasi :45%  <br />  Jumlah Vote : 117 Voters
+            <p className="mb-4 text-lg">Akumulasi : 45%  
+               <br />  Jumlah Vote : 117 Voters
             </p>
           </div>
           <div className="p-4 shadow-md bg-cyan-300 rounded-xl ">
@@ -46,7 +47,7 @@ const Admin: React.FC = () => {
               </div>
             </div>
             <h2 className="ml-4 text-xl font-bold">ADOLF HITLER</h2>
-            <p className="mb-4 text-lg">Akumulasi :75%
+            <p className="mb-4 text-lg">Akumulasi : 75%
               <br /> Jumlah Vote : 300 Voters</p>
           </div>
           <div className="p-4 shadow-md bg-red-400 rounded-xl ">
@@ -56,7 +57,7 @@ const Admin: React.FC = () => {
               </div>
             </div>
             <h2 className="ml-4 text-xl font-bold">SOEHARTO</h2>
-            <p className="mb-4 text-lg">Akumulasi :45%
+            <p className="mb-4 text-lg">Akumulasi : 45%
               <br/>Jumlah Vote : 117 Voters</p>
           </div>
         </div>
