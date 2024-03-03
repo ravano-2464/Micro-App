@@ -109,7 +109,7 @@ const Vote: React.FC = () => {
                             <div className="flex items-center w-[80px] text-center bg-red-900 border-4 rounded-md h-[112px] border-box">
                                 <p className="text-xl font-bold text-white">No. Paslon 3</p>
                             </div>
-                            <div className="ml-[30px] text-4xl font-black text-left text-red-800 ">
+                            <div className="ml-[30px] text-4xl font-black text-left text-red-800">
                                 <h1>HIROHITO</h1>
                                 <h1>78%</h1>
 
@@ -120,7 +120,7 @@ const Vote: React.FC = () => {
                             <div className="flex items-center w-[80px] text-center bg-red-900 border-4 rounded-md h-[112px] border-box">
                                 <p className="text-xl font-bold text-white">No. Paslon 1</p>
                             </div>
-                            <div className="ml-[30px] text-4xl font-black text-left text-yellow-800 border">
+                            <div className="ml-[30px] text-4xl font-black text-left text-yellow-800">
                                 <h1>ADOLF HITLER</h1>
                                 <h1>45%</h1>
 
