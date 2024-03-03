@@ -97,9 +97,9 @@ const Vote: React.FC = () => {
             <Navbar />
             <div className="relative body">
                 <div className="w-full p-8 mx-auto bg-white ">
-                    <div className="py-2 text-5xl font-black text-center">
-                        <h1>INFO PEMILU TER-UPDATE</h1>
-                    </div>
+                   <div className="mt-10 mb-2 text-5xl font-black text-center text-lime-900">
+                       <h1>INFO PEMILU TER-UPDATE</h1>
+                  </div>
                     <div className="flex flex-row justify-center w-full gap-4 md:w-auto md:justify-start md:gap-0 mt-7 md:mt-0">
                     <div className='mt-28 w-96'>
                         <h1 className='flex flex-row mb-16 text-4xl font-black ml-36'>Hasil:</h1>
@@ -145,7 +145,9 @@ const Vote: React.FC = () => {
                             <button onClick={goToSModal}>MASUKAN SUARAMU</button>
                         </div>
                         </div>
+                        <br />
                         <div className="h-[700px] w-full bg-gray-300 flex-row">
+                          <br />
   <h2 className="mt-10 mb-2 text-5xl font-black text-center text">INFO PASLON</h2>
   <Slider {...settings} className='flex flex-row bg-white w-[900px] mx-auto mt-10 border rounded-lg'>
     {candidates.map((candidate) => (
