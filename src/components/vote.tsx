@@ -15,27 +15,30 @@ import Slider from 'react-slick';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export  const data = {
-    
-    datasets: [
-      {
-        label: '% of Total Votes',
-        data: [78, 25, 45],
-        backgroundColor: [
-          'rgb(234,112,112)',
-          'rgb(96,190,248)',
-          'rgb(245,210,76)',
-        ],
-         
-        borderColor: [
-          'rgb(234,112,112)',
-          'rgb(96,190,248)',
-          'rgb(245,210,76)',
-        ],
-        borderWidth: 1,
-      },
-    ],
-  };
+const hirohito = 78;
+const hitler = 45;
+const soeharto = 25;
+
+export const data = {
+  labels: ['Hirohito', 'Hitler', 'Soeharto'],
+  datasets: [
+    {
+      data: [hirohito, hitler, soeharto],
+      label: '% of Total Votes',
+      backgroundColor: [
+        'rgb(234,112,112)',
+        'rgb(245,210,76)',
+        'rgb(96,190,248)',
+      ],
+      borderColor: [
+        'rgb(234,112,112)',
+        'rgb(245,210,76)',
+        'rgb(96,190,248)',
+      ],
+      borderWidth: 1,
+    },
+  ],
+};
 
   const candidates: Candidate[] = [
     {
@@ -53,9 +56,9 @@ export  const data = {
       id: 2,
       name: 'SOEHARTO',
       visiMisi: [
-        'Memindahkan I-LAND di Puncak Bogor.',
-        'Nonton MV 3x sehari.',
-        'Melakukan peresapan pada budaya Korea Selatan.',
+        'Menciptakan Stabilitas Politik Yang Kokoh Dengan Menjaga Keamanan Dan Ketertiban Dalam Negeri Serta Memperkuat Posisi Indonesia di Kancah Internasional.',
+        'Menggerakkan Ekonomi Indonesia Menuju Pertumbuhan Yang Berkelanjutan Melalui Kebijakan Pembangunan Ekonomi, Investasi, Dan Pembangunan Infrastruktur.',
+        'Menanggulangi Kemiskinan Dengan Program-Program Pembangunan Sosial Dan Ekonomi Yang Bertujuan Untuk Meningkatkan Kesejahteraan Masyarakat Secara Umum.',
       ],
       koalisi: ['Partai GOLKAR.', 'Partai Persatuan Pembangunan (PPP).', 'Partai Demokrasi Indonesia Perjuangan (PDI-P).'],
       image: Soeharto,
@@ -112,7 +115,7 @@ const Vote: React.FC = () => {
 
                             </div>
                         </div>
-                        <div className="flex flex-row w-[657px] p-4 bg-amber-300 shadow-amber-300 shadow-lg mt-7 rounded-2xl h-[146px]">
+                        <div className="flex flex-row w-[657px] p-4 bg-amber-300 shadow-amber-300 shadow-lg mt-7 rounded-2xl h-[]146px">
                             <div className="flex items-center w-[80px] text-center bg-red-900 border-4 rounded-md h-[112px] border-box">
                                 <p className="text-xl font-bold text-white ">No. Paslon 1</p>
                             </div>
