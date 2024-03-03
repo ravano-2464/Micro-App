@@ -26,13 +26,22 @@ const Register: React.FC = () => {
     };
 
     const navigate = useNavigate();
+    const ListPartai = () => {
+        navigate('/home');
+    };
+
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    const handleClick = () => {
+        setIsLoggedIn(!isLoggedIn);
+    };
 
     return (
         <>
             <div>
-                <h1 className="text-5xl font-black mb-4 text mt-10 text-center">REGISTER</h1>
+                <h1 className="text-5xl font-black mb-4 mt-10 text-center">REGISTER</h1>
             </div>
-            <div className="flex flex-row justify-center mt-20 ">
+            <div className="flex flex-row justify-center mt-20">
                 <form onSubmit={handleSubmit} className="space-y-4 mb-20">
                     <div>
                         <label htmlFor="fullname" className="block font-medium">Full Name</label>
@@ -89,7 +98,7 @@ const Register: React.FC = () => {
                             className="w-[478px] h-[70px] border-black border rounded-md"
                         />
                     </div>
-                    <button type="submit" className="bgc2 w-[478px] h-[68px] py-2 font-bold text-3xl text-white rounded-md hover:bg-lime-500">Submit</button>
+                    <button type="submit" className="bgc2 w-[478px] h-[68px] py-2 font-bold text-3xl text-white rounded-md hover:bg-lime-500" onClick={ListPartai}>Submit</button>
                 </form>
             </div>
         </>

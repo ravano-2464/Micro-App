@@ -1,56 +1,19 @@
-import React from 'react';
+import React from "react";
 import Navbar from './navbar.tsx';
 import Footer from './footer.tsx';
-import hirohito from '../assets/images/hirohito.jpg';
+import hitler from '../assets/images/hitler.jpg';
+import '../index.css';
 import { useNavigate } from 'react-router-dom';
-import { ResponsiveContainer, PieChart, Pie, Tooltip, Legend, Cell } from 'recharts';
 
 const Vote2: React.FC = () => {
-    const navigate = useNavigate();
-    
-    const goToSModal = () => {
-        navigate('/modal');
-    };
-
-    const data = [
-        { name: 'SOEHARTO', value: 25, color: '#4682B4' },
-        { name: 'ADOLF HITLER', value: 45, color: '#FFD700' }, 
-        { name: 'HIROHITO', value: 78, color: '#FF5733' } 
-    ];
-
     return (
+
         <>
             <Navbar />
             <div className="relative body">
-                <div className="p-8 bg-white max-w-[900px] mx-auto ">
+            <div className="p-8 bg-white max-w-[900px] mx-auto ">
                     <div className="py-2 text-5xl font-black text-center">
                         <h1>INFO PEMILU TER-UPDATE</h1>
-                        <br />
-                        <label>HASIL :</label>
-                    </div>
-                    <div className="flex justify-center items-center mb-20">
-                        <ResponsiveContainer width="80%" height={400}>
-                            <PieChart>
-                                <Pie
-                                    data={data}
-                                    dataKey="value"
-                                    nameKey="name"
-                                    cx="50%"
-                                    cy="50%"
-                                    outerRadius={100}
-                                    fill="#8884d8"
-                                    label={({ name, value }) => `${name} (${value}%)`}
-                                >
-                                    {
-                                        data.map((entry, index) => (
-                                            <Cell key={`cell-${index}`} fill={entry.color} />
-                                        ))
-                                    }
-                                </Pie>
-                                <Tooltip />
-                                <Legend />
-                            </PieChart>
-                        </ResponsiveContainer>
                     </div>
                     <div className="flex flex-col items-center gap-4 mt-7 md:flex-col md:justify-between">
                         <div className="flex flex-row w-[657px] p-4 bg-red-400 shadow-red-400 shadow-lg rounded-2xl h-[]146px">
@@ -80,49 +43,49 @@ const Vote2: React.FC = () => {
                                 <h1>25%</h1>
                             </div>
                         </div>
-                        <div className="flex justify-center text-4xl font-bold text-center text-red-600 py-10">
-                            <br />
-                            <h1>ANDA SUDAH MEMILIH !!!</h1>
-                            <br/>
+                        <div className="text-3xl font-bold text-red">
+                        <h1 >ANDA SUDAH MEMILIH !!!</h1>
                         </div>
-                    </div>
-                    <div className=" h-[700px] bg-slate-300 flex justify-center items-center">
-                        <div>
-                            <h2 className="mt-10 mb-2 text-5xl font-black text-center text ">INFO PASLON</h2>
-                            <div className="flex flex-row justify-center mx-auto mt-10 p-4 bg-white rounded-lg shadow-md w-[650px] h-[494]">
-                                <div className="mt-6 img">
-                                    <img src={hirohito} alt="hirohito" />
+                        </div>
+                        <div className=" h-[500px] bg-slate-300 ps-[100px]">
+                        <h2 className="mt-10 mb-2 text-5xl font-black text-center text ">INFO PASLON</h2>
+                            <div className="flex flex-row flex justify-center  mx-auto mt-10 p-4 bg-white rounded-lg shadow-md w-[650px] h-[494]">
+                             <div className="mt-10 img">
+                                <img src={hitler} alt="hitler"></img>
                                 </div>
                                 <div className="flex flex-col ml-10">
-                                    <p className="mb-2 font-bold -lg">Nomor Urut : 1</p>
-                                    <p className="mb-4 text-3xl font-bold">HIROHITO</p>
-                                    <h3 className="mb-2 font-bold">Visi & Misi :</h3>
-                                    <ul className="mb-4 text-lg list-disc list-inside">
-                                        <li>Memindahkan Indonesia ke Isekai.</li>
-                                        <li>Nonton anime 3x sehari.</li>
-                                        <li>Melakukan peresapan pada budaya jepang.</li>
-                                    </ul>
-                                    <h3 className="mb-2 text-lg font-bold">Koalisi :</h3>
-                                    <ul className="text-lg list-disc list-inside">
-                                        <li>Partai Persatuan Wiboo.</li>
-                                        <li>Partai Redbull.</li>
-                                        <li>Partai Black Magic.</li>
-                                    </ul>
+                                <p className="mb-2 font-bold -lg">Nomor Urut : 1</p>
+                                <p className="mb-4 text-3xl font-bold ">ADOLF HITLER</p>
+                                <h3 className="mb-2 font-bold text-">Visi & Misi :</h3>
+                                <ul className="mb-4 text-lg list-disc list-inside">
+                                    <li>Memindahkan Indonesia ke Isekai.</li>
+                                    <li>Nonton anime 3x sehari.</li>
+                                    <li>Melakukan peresapan pada budaya jepang.</li>
+                                </ul>
+                                <h3 className="mb-2 text-lg font-bold">Koalisi :</h3>
+                                <ul className="text-lg list-disc list-inside">
+                                    <li>Partai Persatuan Wiboo.</li>
+                                    <li>Partai Redbull.</li>
+                                    <li>Partai Black Magic.</li>
+                                </ul>
                                 </div>
                             </div>
                         </div>
+                        <div className="flex justify-center text-4xl font-bold text-center text-red-600 py-28">
+                            
+                                <h1>
+                                    PILIH BERDASARKAN GACHA TIDAK USAH SERIUS
+                                    <br/>YANG PENTING TIDAK MELEGALKAN SLOT
+                                </h1>
+                           
+
+                        </div>
                     </div>
-                    <div className="flex justify-center text-4xl font-bold text-center text-red-600 py-28">
-                        <h1>
-                            PILIH BERDASARKAN GACHA TIDAK USAH SERIUS
-                            <br />YANG PENTING TIDAK MELEGALKAN SLOT
-                        </h1>
-                    </div>
-                </div>
+                
             </div>
             <Footer />
         </>
-    );
-}
+    )
 
+}
 export default Vote2;

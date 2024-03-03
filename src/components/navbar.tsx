@@ -32,7 +32,7 @@ return (
         </div>
       ) : (
         <div>
-          <button className="text-black rounded-s-none bg-white 	border-radius: 0.375rem w-28" onClick={handleClick}>Login</button>
+          <button className="text-black rounded-s-none bg-white border-radius: 0.375rem w-28" onClick={handleClick}>Login</button>
         </div>
       )}   
        </ul>
