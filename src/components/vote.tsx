@@ -115,6 +115,7 @@ const Vote: React.FC = () => {
 
                             </div>
                         </div>
+                        <div className="flex flex-row gap-4 mx-auto mt-7 md:flex-col md:justify-between"></div>
                         <div className="flex flex-row w-[657px] p-4 bg-amber-300 shadow-amber-300 shadow-lg mt-7 rounded-2xl h-[]146px">
                             <div className="flex items-center w-[80px] text-center bg-red-900 border-4 rounded-md h-[112px] border-box">
                                 <p className="text-xl font-bold text-white ">No. Paslon 1</p>
@@ -125,6 +126,7 @@ const Vote: React.FC = () => {
 
                             </div>
                         </div>
+                        <div className="flex flex-row gap-4 mx-auto mt-7 md:flex-col md:justify-between"></div>
                         <div className="flex flex-row w-[657px] p-4  bg-sky-400 shadow-sky-400  shadow-lg mt-7 rounded-2xl h-[]146px">
                             <div className="flex items-center w-[80px] text-center bg-red-900 border-4 rounded-md h-[112px] border-box">
                                 <p className="text-xl font-bold text-white ">No. Paslon 2</p>
