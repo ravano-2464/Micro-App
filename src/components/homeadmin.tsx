@@ -36,7 +36,7 @@ const Admin = () => {
              <br />  Jumlah Vote : 350 Voters
             </p>
           </div>
-          <div className="p-4 shadow-md bg-cyan-300 rounded-xl ">
+          <div className="p-4 shadow-md bg-cyan-300 rounded-xl">
             <div className="flex items-center justify-between ">
               <div className="flex items-center border rounded-lg">
                 <img src={soeharto} alt="Soeharto" />

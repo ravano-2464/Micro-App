@@ -59,7 +59,7 @@ const AddPartai: React.FC = () => {
               name="nomor"
               value={formData.nomor}
               onChange={handleChange}
-              className="w-[580px] h-[50px] border-black border rounded-md  "
+              className="w-[580px] h-[50px] border-black border rounded-md"
             />
           </div>
           <div>
@@ -72,7 +72,7 @@ const AddPartai: React.FC = () => {
               className="w-[580px] h-[90px] border-black border rounded-md"
             />
           </div>
-          <button type="submit" className="bgc2 w-[503px] py-2 font-bold text-3xl text-white  rounded-md hover:bg-lime-500" onClick={ListPartai} >Submit</button>
+          <button type="submit" className="bgc2 w-[503px] py-2 font-bold text-3xl text-white rounded-md hover:bg-lime-500" onClick={ListPartai}>Submit</button>
         </form>
       </div>
 
