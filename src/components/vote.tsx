@@ -140,7 +140,7 @@ const Vote: React.FC = () => {
                         </div>
                         </div>
                         <div className='flex justify-center'>
-                        <div className="bgc2 flex  justify-center w-[466px] p-4 text-[32px] h-[67px] rounded-lg mt-10 font-bold  hover:bg-lime-700">
+                        <div className="bgc2 flex justify-center w-[466px] p-4 text-[32px] h-[67px] rounded-lg mt-10 font-bold hover:bg-lime-700">
                             <button onClick={goToSModal}>MASUKAN SUARAMU</button>
                         </div>
                         </div>

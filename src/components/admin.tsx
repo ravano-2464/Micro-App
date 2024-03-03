@@ -20,7 +20,7 @@ const Admin: React.FC = () => {
     <>
       <Navbar2 />
       <div className="relative">
-        <div className="flex flex-col mt-10 text-5xl font-black text-center text ">
+        <div className="flex flex-col mt-10 text-5xl font-black text-center">
           <h1>DASHBOARD</h1>
         </div>
         <div className="flex flex-row justify-center space-x-96  items-center mt-10">
@@ -53,11 +53,11 @@ const Admin: React.FC = () => {
           <div className="p-4 shadow-md bg-red-400 rounded-xl ">
             <div className="flex items-center justify-between">
               <div className="flex items-center border rounded-lg">
-                <img src={Soeharto} alt="Soeharto" />
+                <img src={hirohito} alt="Hirohito" />
               </div>
             </div>
-            <h2 className="ml-4 text-xl font-bold">SOEHARTO</h2>
-            <p className="mb-4 text-lg">Akumulasi : 45%
+            <h2 className="ml-4 text-xl font-bold">HIROHITO</h2>
+            <p className="mb-4 text-lg">Akumulasi : 78%
               <br/>Jumlah Vote : 117 Voters</p>
           </div>
         </div>

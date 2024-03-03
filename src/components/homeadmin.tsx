@@ -28,36 +28,37 @@ const Admin = () => {
           <div className="p-4 bg-yellow-300 shadow-md rounded-xl">
             <div className="flex items-center justify-between">
               <div className="flex items-center border rounded-lg">
-                <img src={hirohito} alt="hirohito" />
+                <img src={hitler} alt="Adolf Hitler" />
               </div>
             </div>
-            <h2 className="ml-4 text-xl font-bold">HIROHITO</h2>
-            <p className="mb-4 text-lg">Akumulasi : 78% 
-             <br />  Jumlah Vote : 400 Voters
+            <h2 className="ml-4 text-xl font-bold">ADOLF HITLER</h2>
+            <p className="mb-4 text-lg">Akumulasi : 45%
+             <br />  Jumlah Vote : 350 Voters
             </p>
           </div>
           <div className="p-4 shadow-md bg-cyan-300 rounded-xl ">
             <div className="flex items-center justify-between ">
               <div className="flex items-center border rounded-lg">
-                <img src={hitler} alt="hitler" />
+                <img src={soeharto} alt="Soeharto" />
               </div>
             </div>
-            <h2 className="ml-4 text-xl font-bold text-align=right">ADOLF HITLER</h2>
-            <p className="mb-4 text-lg">Akumulasi : 45%
-              <br /> Jumlah Vote : 350 Voters</p>
+            <h2 className="ml-4 text-xl font-bold text-align=right">SOEHARTO</h2>
+            <p className="mb-4 text-lg">Akumulasi : 25%
+              <br /> Jumlah Vote : 250 Voters</p>
           </div>
           <div className="p-4 bg-red-400 shadow-md rounded-xl ">
             <div className="flex items-center justify-between">
               <div className="flex items-center border rounded-lg">
-                <img src={soeharto} alt="soeharto" />
+                <img src={hirohito} alt="Hirohito" />
               </div>
             </div>
-            <h2 className="ml-4 text-xl font-bold">SOEHARTO</h2>
-            <p className="mb-4 text-lg">Akumulasi : 25%
-              <br />Jumlah Vote : 250 Voters</p>
+            <h2 className="ml-4 text-xl font-bold">HIROHITO</h2>
+            <p className="mb-4 text-lg">Akumulasi : 78%
+              <br />Jumlah Vote : 400 Voters</p>
           </div>
         </div>
         <div className="w-full mt-20 bg-zinc-200 h-[450px]">
+          <br />
           <div className="flex justify-center text-5xl font-black text-black text-center">
             <h1>LIST VOTER</h1>
           </div>
