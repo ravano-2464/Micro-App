@@ -32,7 +32,7 @@ return (
         </div>
       ) : (
         <div>
-          <button className="text-black rounded-s-none bg-white border-radius: 0.375rem w-28" onClick={handleClick}>Login</button>
+          <button onClick={handleClick} className="btn bg-white hover:bg-slate-200 text-black font-bold px-8 py-1 rounded-md">LOGIN</button>
         </div>
       )}   
        </ul>
