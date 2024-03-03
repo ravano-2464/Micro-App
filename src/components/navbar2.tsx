@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/images/logo.jpg';
+import Logo from '../assets/images/PKI.jpg';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar2: React.FC = () => {

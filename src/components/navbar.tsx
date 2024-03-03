@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import Logo from '../assets/images/logo.jpg';
+import Logo from '../assets/images/PKI.jpg';
 
 function Navbar () {
 const [isLoggedIn, setIsLoggedIn] = useState(false);

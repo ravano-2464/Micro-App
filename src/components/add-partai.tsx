@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../index.css';
 import Navbar2 from './navbar2';
-import Nazi from '../assets/images/nazi-logo.jpg';
+import Nazi from '../assets/images/nazi-PKI.jpg';
 import { useNavigate } from 'react-router-dom';
 
 

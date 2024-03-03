@@ -38,15 +38,15 @@ const ListPaslon: React.FC = () => {
                 <td className="px-6 py-4 whitespace-nowrap border border-slate-700">{item.name}</td>
                 <td className="px-6 py-4 whitespace-nowrap border border-slate-700">{item.visimisi}
                 <div className="flex flex-col ">
-                  <p>1.Mengadakan Perang Dunia Ketiga Tiap Hari  {item.visimisi}</p>
-                  <p>2.Mengadakan Romusha di Indonesia {item.visimisi}</p>
-                  <p>3.Mengadapan Perang Secara GRATIS tanpa batas {item.visimisi}</p>
+                  <p>1. Mengadakan Perang Dunia Ketiga Tiap Hari  {item.visimisi}</p>
+                  <p>2. Mengadakan Romusha di Indonesia {item.visimisi}</p>
+                  <p>3. Mengadapan Perang Secara GRATIS tanpa batas {item.visimisi}</p>
                 </div></td>
                 <td className="px-6 py-4 whitespace-nowrap border border-slate-700">{item.koalisi}
                 <div className="flex flex-col ">
-                  <p>1.Partai NAZI{item.koalisi}</p>
-                  <p>2.Partai PKI {item.koalisi}</p>
-                  <p>3.Partai Taisei{item.koalisi}</p>
+                  <p>1. Partai NAZI{item.koalisi}</p>
+                  <p>2. Partai PKI {item.koalisi}</p>
+                  <p>3. Partai Taisei{item.koalisi}</p>
                 </div></td>
                 
               </tr>
