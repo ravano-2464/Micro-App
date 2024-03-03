@@ -32,7 +32,7 @@ const Admin = () => {
               </div>
             </div>
             <h2 className="ml-4 text-xl font-bold">HIROHITO</h2>
-            <p className="mb-4 text-lg">Akumulasi :78% 
+            <p className="mb-4 text-lg">Akumulasi : 78% 
              <br />  Jumlah Vote : 400 Voters
             </p>
           </div>
@@ -43,7 +43,7 @@ const Admin = () => {
               </div>
             </div>
             <h2 className="ml-4 text-xl font-bold text-align=right">ADOLF HITLER</h2>
-            <p className="mb-4 text-lg">Akumulasi :45%
+            <p className="mb-4 text-lg">Akumulasi : 45%
               <br /> Jumlah Vote : 350 Voters</p>
           </div>
           <div className="p-4 bg-red-400 shadow-md rounded-xl ">
@@ -53,7 +53,7 @@ const Admin = () => {
               </div>
             </div>
             <h2 className="ml-4 text-xl font-bold">SOEHARTO</h2>
-            <p className="mb-4 text-lg">Akumulasi :25%
+            <p className="mb-4 text-lg">Akumulasi : 25%
               <br />Jumlah Vote : 250 Voters</p>
           </div>
         </div>

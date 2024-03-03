@@ -44,7 +44,7 @@ const Vote2: React.FC = () => {
                             </div>
                         </div>
                         <div className="text-3xl font-bold text-red">
-                        <h1 >ANDA SUDAH MEMILIH !!!</h1>
+                        <h1>ANDA SUDAH MEMILIH !!!</h1>
                         </div>
                         </div>
                         <div className=" h-[500px] bg-slate-300 ps-[100px]">
