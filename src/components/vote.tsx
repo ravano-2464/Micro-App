@@ -141,7 +141,7 @@ const Vote: React.FC = () => {
                             <button onClick={goToSModal}>MASUKAN SUARAMU</button>
                         </div>
                         </div>
-                        <div className="h-[500px] w-full bg-gray-300 flex-row">
+                        <div className="h-[700px] w-full bg-gray-300 flex-row">
   <h2 className="mt-10 mb-2 text-5xl font-black text-center text">INFO PASLON</h2>
   <Slider {...settings} className='flex flex-row bg-white w-[900px] mx-auto mt-10 border rounded-lg'>
     {candidates.map((candidate) => (
