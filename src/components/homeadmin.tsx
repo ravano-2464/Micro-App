@@ -1,4 +1,4 @@
-import Navbar2 from './navbar2';
+import Navbar2 from './navbar2'; // Corrected import
 import hitler from '../assets/images/hitler.jpg';
 import hirohito from '../assets/images/hirohito.jpg';
 import soeharto from '../assets/images/soeharto.jpg';
@@ -16,7 +16,7 @@ const Admin = () => {
     <>
       <Navbar2 />
       <div className="relative">
-        <div className="flex flex-col mt-10 text-5xl font-black text-center">
+        <div className="mt-10 mb-2 text-5xl font-black text-center text">
           <h1>DASHBOARD</h1>
         </div>
         <div className="flex flex-row items-center justify-center mt-10 space-x-96">
@@ -59,8 +59,8 @@ const Admin = () => {
         </div>
         <div className="w-full mt-20 bg-zinc-200 h-[450px]">
           <br />
-          <div className="flex justify-center text-5xl font-black text-black text-center">
-            <h1>LIST VOTER</h1>
+          <div className="flex justify-center text-5xl font-black text-black text-center text">
+               <h1>LIST VOTER</h1>
           </div>
           <div className="flex mx-auto mt-10 overflow-x-auto">
             <table className="table-auto w-[875px] h-[200px] mx-auto divide-y divide-gray-200 border-collapse border border-slate-900">
