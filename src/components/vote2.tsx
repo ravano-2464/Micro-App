@@ -86,7 +86,7 @@ export const data = {
     slidesToScroll: 1,
   };
 
-const Vote: React.FC = () => {
+const Vote2: React.FC = () => {
     const navigate = useNavigate();
     const goToSModal = () => {
         navigate('/modal');
@@ -198,4 +198,4 @@ const Vote: React.FC = () => {
     )
 
 }
-export default Vote;
+export default Vote2;
