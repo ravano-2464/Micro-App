@@ -1,7 +1,7 @@
 import React from "react";
 import '../index.css';
-import hitler from '../assets/images/hitler.jpg';
-import hirohito from '../assets/images/hirohito.jpg';
+import Hitler from '../assets/images/hitler.jpg';
+import Hirohito from '../assets/images/hirohito.jpg';
 import Soeharto from '../assets/images/soeharto.jpg';
 import { useNavigate } from 'react-router-dom';
 
@@ -26,22 +26,7 @@ const Modal: React.FC = () => {
                     <div className="flex items-center justify-between">
                         <sup className="absolute top-0 right-0 m-2 text-xs">1</sup>
                         <div className="flex items-center">
-                            <img src={Soeharto} alt="SOEHARTO" />
-                        </div>
-                    </div>
-                    <h2 className="ml-4 text-xl font-bold">SOEHARTO</h2>
-                    <p className="mb-4 text-lg">Memindahkan Indonesia ke Isekai</p>
-                    <h3 className="mb-2 text-lg font-bold">Partai Pengusung:</h3>
-                    <ul className="mb-4 text-lg list-disc list-inside">
-                        <li>Partai persatuan monyet</li>
-                        <li>Partai sapi perah indonesia</li>
-                        <li>Partai pisang masak</li>
-                    </ul>
-                </div>
-                <div className="p-4 shadow-md bg-zinc-200 rounded-xl hover:bg-yellow-300" onClick={() => handleImageClick('Hitler')}>
-                    <div className="flex items-center justify-between ">
-                        <div className="flex items-center">
-                            <img src={hitler} alt="hitler" />
+                            <img src={Hitler} alt="Adolf Hitler" />
                         </div>
                     </div>
                     <h2 className="ml-4 text-xl font-bold">ADOLF HITLER</h2>
@@ -53,10 +38,25 @@ const Modal: React.FC = () => {
                         <li>Partai pisang masak</li>
                     </ul>
                 </div>
+                <div className="p-4 shadow-md bg-zinc-200 rounded-xl hover:bg-yellow-300" onClick={() => handleImageClick('Hitler')}>
+                    <div className="flex items-center justify-between ">
+                        <div className="flex items-center">
+                            <img src={Soeharto} alt="Soeharto" />
+                        </div>
+                    </div>
+                    <h2 className="ml-4 text-xl font-bold">SOEHARTO</h2>
+                    <p className="mb-4 text-lg">Memindahkan Indonesia ke Isekai</p>
+                    <h3 className="mb-2 text-lg font-bold">Partai Pengusung:</h3>
+                    <ul className="mb-4 text-lg list-disc list-inside">
+                        <li>Partai persatuan monyet</li>
+                        <li>Partai sapi perah indonesia</li>
+                        <li>Partai pisang masak</li>
+                    </ul>
+                </div>
                 <div className="p-4 shadow-md bg-zinc-200 rounded-xl hover:bg-yellow-300" onClick={() => handleImageClick('Soeharto')}>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
-                            <img src={hirohito} alt="Hirohito" />
+                            <img src={Hirohito} alt="Hirohito" />
                         </div>
                     </div>
                     <h2 className="ml-4 text-xl font-bold">HIROHITO</h2>
