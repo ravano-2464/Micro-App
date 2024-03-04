@@ -154,7 +154,7 @@ const Vote: React.FC = () => {
       <div key={candidate.id} className='flex flex-col items-center'>
         <div className='flex flex-row items-center'>
           <div className="mt-10 mb-10 ml-10 ">
-             <img src={candidate.image} className='h-[300px] w-[500px]' />
+             <img src={candidate.image} className='h-[300px] w-[700px]' />
           </div>
           <div className='ml-20'>
             <p className="mb-2 font-bold -lg">Nomor Urut: {candidate.id}</p>
