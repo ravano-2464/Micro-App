@@ -26,10 +26,10 @@ const Modal: React.FC = () => {
                     <div className="flex items-center justify-between">
                         <sup className="absolute top-0 right-0 m-2 text-xs">1</sup>
                         <div className="flex items-center">
-                            <img src={hirohito} alt="hirohito" />
+                            <img src={Soeharto} alt="SOEHARTO" />
                         </div>
                     </div>
-                    <h2 className="ml-4 text-xl font-bold">HIROHITO</h2>
+                    <h2 className="ml-4 text-xl font-bold">SOEHARTO</h2>
                     <p className="mb-4 text-lg">Memindahkan Indonesia ke Isekai</p>
                     <h3 className="mb-2 text-lg font-bold">Partai Pengusung:</h3>
                     <ul className="mb-4 text-lg list-disc list-inside">
@@ -56,10 +56,10 @@ const Modal: React.FC = () => {
                 <div className="p-4 shadow-md bg-zinc-200 rounded-xl hover:bg-yellow-300" onClick={() => handleImageClick('Soeharto')}>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
-                            <img src={Soeharto} alt="Soeharto" />
+                            <img src={hirohito} alt="Hirohito" />
                         </div>
                     </div>
-                    <h2 className="ml-4 text-xl font-bold">SOEHARTO</h2>
+                    <h2 className="ml-4 text-xl font-bold">HIROHITO</h2>
                     <p className="mb-4 text-lg">Memindahkan Indonesia ke Isekai</p>
                     <h3 className="mb-2 text-lg font-bold">Partai Pengusung:</h3>
                     <ul className="mb-4 text-lg list-disc list-inside">
