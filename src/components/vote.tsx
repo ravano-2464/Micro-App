@@ -113,7 +113,6 @@ const Vote: React.FC = () => {
                             <div className="ml-[30px] text-4xl font-black text-left text-red-800">
                                 <h1>HIROHITO</h1>
                                 <h1>78%</h1>
-
                             </div>
                         </div>
                         <div className="flex flex-row gap-4 mx-auto mt-7 md:flex-col md:justify-between"></div>
