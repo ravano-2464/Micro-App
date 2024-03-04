@@ -22,7 +22,7 @@ const Modal: React.FC = () => {
                 <h1>MASUKAN PILIHAN MU</h1>
             </div>
             <div className="flex justify-between w-full mt-10 space-x-3">
-                <div className="p-4 shadow-md bg-zinc-200 rounded-xl hover:bg-yellow-300" onClick={() => handleImageClick('Hirohito')}>
+                <div className="p-4 shadow-md bg-zinc-200 rounded-xl hover:bg-yellow-300" onClick={() => handleImageClick('Adolf Hitler')}>
                     <div className="flex items-center justify-between">
                         <sup className="absolute top-0 right-0 m-2 text-xs">1</sup>
                         <div className="flex items-center">
@@ -38,7 +38,7 @@ const Modal: React.FC = () => {
                         <li>Partai pisang masak</li>
                     </ul>
                 </div>
-                <div className="p-4 shadow-md bg-zinc-200 rounded-xl hover:bg-yellow-300" onClick={() => handleImageClick('Hitler')}>
+                <div className="p-4 shadow-md bg-zinc-200 rounded-xl hover:bg-yellow-300" onClick={() => handleImageClick('Soeharto')}>
                     <div className="flex items-center justify-between ">
                         <div className="flex items-center">
                             <img src={Soeharto} alt="Soeharto" />
@@ -53,7 +53,7 @@ const Modal: React.FC = () => {
                         <li>Partai pisang masak</li>
                     </ul>
                 </div>
-                <div className="p-4 shadow-md bg-zinc-200 rounded-xl hover:bg-yellow-300" onClick={() => handleImageClick('Soeharto')}>
+                <div className="p-4 shadow-md bg-zinc-200 rounded-xl hover:bg-yellow-300" onClick={() => handleImageClick('Hirohito')}>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
                             <img src={Hirohito} alt="Hirohito" />
