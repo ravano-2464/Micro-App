@@ -145,7 +145,7 @@ const Vote2: React.FC = () => {
                             <h1>ANDA SUDAH MEMILIH !!!</h1>
                         </div>
                         <br />
-                        <div className="h-[700px] w-full bg-gray-300 flex-row">
+                        <div className="h-[800px] w-full bg-gray-300 flex-row">
                           <br />
   <h2 className="mt-10 mb-2 text-5xl font-black text-center text">INFO PASLON</h2>
   <Slider {...settings} className='flex flex-row bg-white w-[900px] mx-auto mt-10 border rounded-lg'>
