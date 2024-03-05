@@ -1,4 +1,4 @@
-import Navbar2 from './navbar2'; // Corrected import
+import Navbar2 from './navbar2'; 
 import hitler from '../assets/images/hitler.jpg';
 import hirohito from '../assets/images/hirohito.jpg';
 import soeharto from '../assets/images/soeharto.jpg';

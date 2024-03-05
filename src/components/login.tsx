@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Icon from './assets/images/Skull.ico';
 
 interface handleAuth {
     handle: (e: React.ChangeEvent<HTMLInputElement>) => void
