@@ -19,7 +19,7 @@ const Register = (props: InterfaceRegister) => {
                 <Input
                   onchange={() => {}}
                   id="fullname"
-                  placeholder="Ravano Akbar Widodo"
+                  placeholder="Your FullName"
                   type="text"
                   name="text"
                 />
