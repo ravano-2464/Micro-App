@@ -1,0 +1,30 @@
+[
+  {
+    "no": "1",
+    "name": "Kim Jong Un",
+    "addres": "North Korea",
+    "gender": "Laki-Laki",
+    "paslon": "Adolf Hitler"
+  },
+  {
+    "no": "2",
+    "name": "Megawati",
+    "addres": "Indonesia",
+    "gender": "Perempuan",
+    "paslon": "Soeharto"
+  },
+  {
+    "no": "3",
+    "name": "Yoshisuke Aikawa",
+    "addres": "Japan",
+    "gender": "Laki-Laki",
+    "paslon": "Hirohito"
+  },
+  {
+    "no": "4",
+    "name": "Kiichiro Toyoda",
+    "addres": "Japan",
+    "gender": "Laki-Laki",
+    "paslon": "Hirohito"
+  }
+]

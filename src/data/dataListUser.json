@@ -1,0 +1,14 @@
+[
+  {
+    "linkTo": "/listpartai",
+    "list": "Partai"
+  },
+  {
+    "linkTo": "/listpaslon",
+    "list": "Paslon"
+  },
+  {
+    "linkTo": "/vote",
+    "list": "Voting"
+  }
+]
