@@ -11,9 +11,9 @@ AppDataSource.initialize()
     app.use("/api", Route);
 
     app.get("/hallo", (req: Request, res: Response) => {
-      res.status(200).json({ data: "succsess get data" });
+      res.status(200).json({ data: "successfully get data" });
     });
 
-    app.listen(port, () => console.log(`server succsess on port ${port}`));
+    app.listen(port, () => console.log(`server successfully starting on port ${port}`));
   })
   .catch((error) => console.log(error));
