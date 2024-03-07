@@ -20,10 +20,10 @@ const Carousel = () => {
       {DataCarouselPaslon.map((item, index) => (
         <SwiperSlide key={index}>
           <div className="flex justify-center items-center h-[600px]">
-            <div className="bg-white w-[900px] h-[494px] flex justify-center items-center gap-[30px] p-[50px] rounded-[10px] shadow-xl shadow-neutral-400">
+            <div className="bg-white w-[1000px] h-[900px] flex justify-center items-center gap-[30px] p-[50px] rounded-[10px] shadow-xl shadow-neutral-400">
               <div>
                 <img
-                  className="w-[246px] h-[328px]"
+                  className="w-[600px] h-[328px]"
                   src={item.fotoPaslon}
                   alt="Profil"
                 />
