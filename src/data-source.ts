@@ -8,7 +8,7 @@ export const AppDataSource = new DataSource({
   host: "localhost",
   port: 5432,
   username: "postgres",
-  password: "ariskiflan",
+  password: "ravano",
   database: "micro_app",
   synchronize: true,
   logging: false,
