@@ -10,7 +10,7 @@ export default new (class UserService {
       const repository = AppDataSource.getRepository(User);
 
       const user = repository.create({
-        fullname: reqBody.username,
+        fullname: reqBody.fullname,
         alamat: reqBody.alamat,
         jenis_kelamin: reqBody.jenis_kelamin,
         username: reqBody.username,
