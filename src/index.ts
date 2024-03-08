@@ -8,7 +8,7 @@ AppDataSource.initialize()
     const port = 5000;
 
     app.use(express.json());
-    app.use("/api", Route);
+    app.use("/api/", Route);
 
     app.get("/hallo", (req: Request, res: Response) => {
       res.status(200).json({ data: "successfully get data" });

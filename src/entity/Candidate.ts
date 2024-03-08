@@ -15,6 +15,6 @@ export class Candidate {
   @Column()
   vision_mission: string;
 
-  @OneToOne(() => Vote, (vote) => vote.candidate) // specify inverse side as a second parameter
+  @OneToOne(() => Vote, (vote) => vote.candidate) 
   vote: Vote;
 }
