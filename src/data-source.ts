@@ -2,6 +2,8 @@ import "reflect-metadata";
 import { DataSource } from "typeorm";
 import { User } from "./entity/User";
 import { Article } from "./entity/Article";
+import { Candidate } from "./entity/Candidate";
+import { Vote } from "./entity/Vote";
 
 export const AppDataSource = new DataSource({
   type: "postgres",
@@ -12,7 +14,7 @@ export const AppDataSource = new DataSource({
   database: "Micro_Apps",
   synchronize: true,
   logging: false,
-  entities: [User, Article],
+  entities: [User, Article, Candidate, Vote],
   migrations: [],
   subscribers: [],
 });

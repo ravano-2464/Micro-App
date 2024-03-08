@@ -4,21 +4,20 @@ import { AppDataSource } from "../data-source";
 import { User } from "../entity/User";
 
 export default new (class UserService {
+  repository = AppDataSource.getRepository(User);
   //////////////// CREATE /////////////////
   async create(reqBody: any): Promise<any> {
     try {
-      const repository = AppDataSource.getRepository(User);
-
-      const user = repository.create({
+      const user = this.repository.create({
         fullname: reqBody.fullname,
-        alamat: reqBody.alamat,
-        jenis_kelamin: reqBody.jenis_kelamin,
+        address: reqBody.address,
+        gender: reqBody.gender,
         username: reqBody.username,
         password: reqBody.password,
         role: reqBody.role,
       });
 
-      await AppDataSource.getRepository(User)
+      await this.repository
         .createQueryBuilder()
         .insert()
         .into(User)
@@ -34,9 +33,7 @@ export default new (class UserService {
   //////////////// FIND /////////////////
   async find(): Promise<any> {
     try {
-      const user = await AppDataSource.getRepository(User)
-        .createQueryBuilder("user")
-        .getMany();
+      const user = await this.repository.createQueryBuilder("user").getMany();
       return user;
     } catch (error) {
       throw error;
@@ -46,7 +43,7 @@ export default new (class UserService {
   //////////////// DELETE /////////////////
   async delete(id: number): Promise<any> {
     try {
-      const deleteUser = await AppDataSource.getRepository(User)
+      const deleteUser = await this.repository
         .createQueryBuilder()
         .delete()
         .where("id = :id", { id: id })
@@ -62,21 +59,22 @@ export default new (class UserService {
   async update(
     body: {
       fullname: string;
-      alamat: string;
-      jenis_kelamin: string;
+      address: string;
+      gender: any;
       username: any;
       password: any;
-      role: string;
+      role: any;
     },
     id: number
   ): Promise<any> {
     try {
-      const updateUser = await AppDataSource.createQueryBuilder()
+      const updateUser = await this.repository
+        .createQueryBuilder()
         .update(User)
         .set({
           fullname: body.fullname,
-          alamat: body.alamat,
-          jenis_kelamin: body.jenis_kelamin,
+          address: body.address,
+          gender: body.gender,
           username: body.username,
           password: body.password,
           role: body.role,

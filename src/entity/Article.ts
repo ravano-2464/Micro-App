@@ -4,6 +4,7 @@ import {
   Column,
   CreateDateColumn,
   ManyToOne,
+  JoinColumn,
 } from "typeorm";
 
 import { User } from "./User";
@@ -25,6 +26,10 @@ export class Article {
   @CreateDateColumn()
   createdDate: Date;
 
+  @Column({ name: "user_id" })
+  userId: number;
+
   @ManyToOne(() => User, (user) => user.article)
+  @JoinColumn({ name: "user_id", referencedColumnName: "id" })
   user: User;
 }

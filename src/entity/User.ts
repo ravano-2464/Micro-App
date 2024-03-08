@@ -1,5 +1,12 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from "typeorm";
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  OneToMany,
+  OneToOne,
+} from "typeorm";
 import { Article } from "./Article";
+import { Vote } from "./Vote";
 
 export enum Gender {
   Male = "Laki - Laki",
@@ -20,14 +27,14 @@ export class User {
   fullname: string;
 
   @Column()
-  alamat: string;
+  address: string;
 
   @Column({
     type: "enum",
     enum: Gender,
     default: Gender.Male,
   })
-  jenis_kelamin: Gender;
+  gender: Gender;
 
   @Column()
   username: string;
@@ -44,4 +51,7 @@ export class User {
 
   @OneToMany(() => Article, (article) => article.user)
   article: Article[];
+
+  @OneToOne(() => Vote, (vote) => vote.user) 
+  vote: Vote;
 }

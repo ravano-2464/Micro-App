@@ -1,16 +1,16 @@
 import { Request, Response } from "express";
-import ArticleService from "../services/ArticleService";
+import CandidateService from "../services/CandidateService";
 
-export default new (class ArticleControllers {
+export default new (class CandidateController {
   ///////////////// CREATE /////////////////
   async create(req: Request, res: Response): Promise<Response> {
     try {
       const data = req.body;
-      await ArticleService.create(data);
+      await CandidateService.create(data);
 
       return res
         .status(200)
-        .json({ message: "Create data Article Success", data });
+        .json({ message: "Create data Candidate Success", data });
     } catch (error) {
       return res
         .status(500)
@@ -21,9 +21,9 @@ export default new (class ArticleControllers {
   ///////////////// FIND /////////////////
   async find(req: Request, res: Response): Promise<Response> {
     try {
-      const article = await ArticleService.find();
+      const candidate = await CandidateService.find();
 
-      return res.status(200).json(article);
+      return res.status(200).json(candidate);
     } catch (error) {
       return res
         .status(500)
@@ -35,9 +35,9 @@ export default new (class ArticleControllers {
   async getOne(req: Request, res: Response): Promise<Response> {
     try {
       const id = parseInt(req.params.id);
-      const article = await ArticleService.getOne(id);
+      const candidate = await CandidateService.getOne(id);
 
-      return res.status(200).json(article);
+      return res.status(200).json(candidate);
     } catch (error) {
       return res
         .status(500)
@@ -49,8 +49,8 @@ export default new (class ArticleControllers {
   async delete(req: Request, res: Response): Promise<Response> {
     try {
       const id = parseInt(req.params.id);
-      await ArticleService.delete(id);
-      return res.status(200).json({ message: "Delete Article Success" });
+      await CandidateService.delete(id);
+      return res.status(200).json({ message: "Delete Candidate Success" });
     } catch (error) {
       return res
         .status(500)
@@ -63,10 +63,11 @@ export default new (class ArticleControllers {
     try {
       const id = parseInt(req.params.id);
       const { body } = req;
-      await ArticleService.update(body, id);
-      return res
-        .status(200)
-        .json({ message: "Update Article Success", data: { id: id, ...body } });
+      await CandidateService.update(body, id);
+      return res.status(200).json({
+        message: "Update Candidate Success",
+        data: { id: id, ...body },
+      });
     } catch (error) {
       return res
         .status(500)

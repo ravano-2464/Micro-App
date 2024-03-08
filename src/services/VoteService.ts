@@ -1,27 +1,24 @@
 import { AppDataSource } from "../data-source";
-import { Article } from "../entity/Article";
+import { Vote } from "../entity/Vote";
 
-export default new (class ArticleService {
-  repository = AppDataSource.getRepository(Article);
+export default new (class VoteService {
+  repository = AppDataSource.getRepository(Vote);
   //////////////// CREATE /////////////////
   async create(reqBody: any): Promise<any> {
     try {
-      const article = this.repository.create({
-        title: reqBody.title,
-        image: reqBody.image,
-        content: reqBody.content,
-        createdDate: reqBody.createdDate,
-        userId: reqBody.userId,
+      const vote = this.repository.create({
+        candidate_id: reqBody.candidate_id,
+        user_id: reqBody.user_id,
       });
 
       await this.repository
         .createQueryBuilder()
         .insert()
-        .into(Article)
-        .values(article)
+        .into(Vote)
+        .values(vote)
         .execute();
 
-      return Article;
+      return vote;
     } catch (error) {
       throw error;
     }
@@ -30,10 +27,8 @@ export default new (class ArticleService {
   //////////////// FIND /////////////////
   async find(): Promise<any> {
     try {
-      const article = await this.repository
-        .createQueryBuilder("article")
-        .getMany();
-      return article;
+      const vote = await this.repository.createQueryBuilder("vote").getMany();
+      return vote;
     } catch (error) {
       throw error;
     }
@@ -42,13 +37,13 @@ export default new (class ArticleService {
   //////////////// GET /////////////////
   async getOne(id: number): Promise<any> {
     try {
-      const article = await this.repository
-        // .findOneBy({ id });
-        .createQueryBuilder("article")
-        .leftJoinAndSelect("article.user", "user")
-        .where("article.id = :id", { id: id })
+      const vote = await this.repository
+        .createQueryBuilder("vote")
+        .leftJoinAndSelect("vote.user", "user")
+        .leftJoinAndSelect("vote.candidate", "candidate")
+        .where("vote.id = :id", { id: id })
         .getOne();
-      return article;
+      return vote;
     } catch (error) {
       throw error;
     }
@@ -57,13 +52,13 @@ export default new (class ArticleService {
   //////////////// DELETE /////////////////
   async delete(id: number): Promise<any> {
     try {
-      const deleteArticle = await this.repository
+      const deleteVote = await this.repository
         .createQueryBuilder()
         .delete()
         .where("id = :id", { id: id })
         .execute();
 
-      return deleteArticle;
+      return deleteVote;
     } catch (error) {
       throw error;
     }
@@ -72,24 +67,18 @@ export default new (class ArticleService {
   //////////////// UPDATE /////////////////
   async update(
     body: {
-      title: string;
-      image: string;
-      content: string;
-      createdDate: Date;
-      userId: number;
+      candidate_id: number;
+      user_id: number;
     },
     id: number
   ): Promise<any> {
     try {
       const updateArticle = await this.repository
         .createQueryBuilder()
-        .update(Article)
+        .update(Vote)
         .set({
-          title: body.title,
-          image: body.image,
-          content: body.content,
-          createdDate: body.createdDate,
-          userId: body.userId,
+          candidate_id: body.candidate_id,
+          user_id: body.user_id,
         })
         .where("id = :id", { id: id })
         .execute();
