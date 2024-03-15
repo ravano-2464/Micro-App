@@ -1,13 +1,12 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import PKI from "../assets/images/PKI.jpg";
 import Label from "../components/Elements/Input/Label";
 import Navbar from "../components/Fragments/Navbar";
 import DataListAdmin from "../data/dataListAdmin.json";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import Input from "../components/Elements/Input/Input";
+import { useNavigate, useParams } from "react-router-dom";
 
-const AddPartai = () => {
+const EditPartai = () => {
   const [value, setValue] = useState({
     parties_name: "",
     parties_chairman: "",
@@ -16,11 +15,12 @@ const AddPartai = () => {
     parties_image: "",
   });
   const navigate = useNavigate();
+  const { id } = useParams();
 
-  const saveParties = async (e: React.FormEvent<HTMLFormElement>) => {
+  const updateParties = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/v1/parties", value);
+      await axios.patch(`http://localhost:5000/api/v1/parties/${id}`, value);
 
       navigate("/listpartai");
     } catch (error) {
@@ -35,13 +35,28 @@ const AddPartai = () => {
     });
   };
 
+  const getPartiesById = async () => {
+    try {
+      const { data } = await axios.get(
+        `http://localhost:5000/api/v1/parties/${id}`
+      );
+      setValue(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getPartiesById();
+  }, []);
+
   return (
     <div>
       <Navbar textNav="PEMILU PRESIDEN DUMBWAYS.ID" listItem={DataListAdmin} />
 
       <main className="flex items-center justify-center flex-col">
         <h1 className="text-[48px] font-[700] mt-[50px] text-login">
-          ADD PARTAI
+          EDIT PARTAI
         </h1>
         <div className="flex gap-[50px] w-[1140px] px-[100px] bg-white pt-[15px] mt-[50px] mb-[20px] ">
           <div>
@@ -53,38 +68,43 @@ const AddPartai = () => {
           </div>
 
           <div className="w-[500px]">
-            <form onSubmit={saveParties}>
+            <form onSubmit={updateParties}>
               <div className="flex flex-col gap-[20px] mb-[50px] ">
                 <div>
                   <Label text="Nama" htmlfor="nama" />
-                  <Input
-                    placeholder=""
-                    onchange={getInput}
+
+                  <input
                     type="text"
                     name="parties_name"
-                    id="parties_name"
+                    id="nama"
+                    value={value.parties_name}
+                    onChange={getInput}
+                    className="border-solid border-[2px] border-black rounded-[10px] text-[14px] w-full px-[5px] py-[5px] placeholder: opacity-50"
                   />
                 </div>
 
                 <div>
                   <Label text="Ketua Umum" htmlfor="ketum" />
-                  <Input
-                    placeholder=""
-                    onchange={getInput}
+
+                  <input
                     type="text"
                     name="parties_chairman"
-                    id="parties_chairman"
+                    id="ketum"
+                    value={value.parties_chairman}
+                    onChange={getInput}
+                    className="border-solid border-[2px] border-black rounded-[10px] text-[14px] w-full px-[5px] py-[5px] placeholder: opacity-50"
                   />
                 </div>
 
                 <div>
                   <Label text="Image" htmlfor="image" />
-                  <Input
-                    placeholder=""
-                    onchange={getInput}
+                  <input
                     type="text"
                     name="parties_image"
-                    id="parties_image"
+                    id="image"
+                    value={value.parties_image}
+                    onChange={getInput}
+                    className="border-solid border-[2px] border-black rounded-[10px] text-[14px] w-full px-[5px] py-[5px] placeholder: opacity-50"
                   />
                 </div>
 
@@ -94,6 +114,7 @@ const AddPartai = () => {
                     type="text"
                     name="vision_mission"
                     id="visimisi"
+                    value={value.vision_mission}
                     onChange={getInput}
                     className="border-solid border-[2px] h-[120px] border-black rounded-[10px] text-[14px] w-full px-[5px] pb-[75px] py-[5px] placeholder: opacity-50"
                   />
@@ -101,10 +122,12 @@ const AddPartai = () => {
 
                 <div>
                   <Label text="Alamat" htmlfor="alamat" />
+
                   <input
                     type="text"
                     name="parties_address"
                     id="address"
+                    value={value.parties_address}
                     onChange={getInput}
                     className="border-solid border-[2px] h-[120px] border-black rounded-[10px] text-[14px] w-full px-[5px] pb-[75px] py-[5px] placeholder: opacity-50"
                   />
@@ -114,7 +137,7 @@ const AddPartai = () => {
                   type="submit"
                   className="rounded-[10px] bg-login px-[5px] py-[2px] w-full text-white font-bold text-[32px]"
                 >
-                  SUBMIT
+                  UPDATE
                 </button>
               </div>
             </form>
@@ -125,4 +148,4 @@ const AddPartai = () => {
   );
 };
 
-export default AddPartai;
+export default EditPartai;

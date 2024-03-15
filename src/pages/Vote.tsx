@@ -194,7 +194,7 @@ const Vote = () => {
         </main>
 
         <div className="bg-body w-full flex items-center justify-center ">
-          <div className="mt-[50px] mb-[80px] h-[800px] w-[1140px] bg-body">
+          <div className="mt-[50px] mb-[80px] h-[850px] w-[1140px] bg-body">
             <p className="text-login text-[48px] font-[900] text-center ">
               INFO PASLON
             </p>

@@ -9,6 +9,7 @@ import AddPaslon from "./pages/AddPaslon";
 import ListPartai from "./pages/ListPartai";
 import AddPartai from "./pages/AddPartai";
 import Carousel from "./components/Fragments/Carousel";
+import EditPartai from "./pages/EditPartai";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/listpartai" Component={ListPartai} />
           <Route path="/addpaslon" Component={AddPaslon} />
           <Route path="/addpartai" Component={AddPartai} />
+          <Route path="/editpartai/:id" Component={EditPartai} />
         </Routes>
       </Router>
     </>

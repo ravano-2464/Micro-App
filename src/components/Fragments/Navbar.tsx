@@ -1,5 +1,5 @@
 import Logo from "../Elements/Logo/Logo";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import React from "react";
 import { useState } from "react";
 import Modal from "./Modal";
@@ -13,11 +13,6 @@ const Navbar = (props: InterfaceNavbar) => {
   const [openRegister, setOpenRegister] = useState(false);
   const [userLogin, setUserLogin] = useState(false);
 
-  const navigate = useNavigate();
-
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-
   const handleRegister = (): void => {
     setOpenLogin(false);
     setOpenRegister(true);
@@ -28,21 +23,10 @@ const Navbar = (props: InterfaceNavbar) => {
     setOpenRegister(false);
   };
 
-  const getInputValue = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setUsername(e.target.value);
-    setPassword(e.target.value);
-  };
-
   const loginUser = (e: React.MouseEvent<HTMLElement>): void => {
     e.preventDefault();
     setUserLogin(!userLogin);
     setOpenLogin(false);
-
-    if (username === "Ravano" && password === "admin") {
-      navigate("/admin");
-    } else if (username !== "" && password !== "") {
-      navigate("/");
-    }
   };
 
   return (
@@ -85,11 +69,7 @@ const Navbar = (props: InterfaceNavbar) => {
           )}
 
           <Modal open={openLogin} onClose={() => setOpenLogin(false)}>
-            <Login
-              onclick={loginUser}
-              onClickRegist={handleRegister}
-              getInputValue={getInputValue}
-            />
+            <Login onclick={loginUser} onClickRegist={handleRegister} />
           </Modal>
 
           <Modal open={openRegister} onClose={() => setOpenRegister(false)}>
