@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from "react";
-import PKI from "../assets/images/PKI.jpg";
+import Hacker from "../assets/images/hacker.jpg";
 import Label from "../components/Elements/Input/Label";
 import Navbar from "../components/Fragments/Navbar";
 import DataListAdmin from "../data/dataListAdmin.json";
@@ -46,8 +46,8 @@ const AddPartai = () => {
         <div className="flex gap-[50px] w-[1140px] px-[100px] bg-white pt-[15px] mt-[50px] mb-[20px] ">
           <div>
             <img
-              className="w-[368px] h-[523px]"
-              src={PKI}
+              className="w-[500px] h-[640px]"
+              src={Hacker}
               alt="Foto Partai Paslon"
             />
           </div>

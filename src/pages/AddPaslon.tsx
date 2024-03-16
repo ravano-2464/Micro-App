@@ -1,4 +1,4 @@
-import PKI from "../assets/images/PKI.jpg";
+import Skull from "../assets/images/skull.jpg";
 import Label from "../components/Elements/Input/Label";
 import Input from "../components/Elements/Input/Input";
 import Button from "../components/Elements/Button/Button";
@@ -17,8 +17,8 @@ const AddPaslon = () => {
         <div className="flex gap-[50px] w-[1140px] px-[100px] bg-white pt-[15px] mt-[50px] mb-[20px] ">
           <div>
             <img
-              className="w-[368px] h-[523px]"
-              src={PKI}
+              className="w-[500px] h-[425px]"
+              src={Skull}
               alt="Foto Paslon"
             />
           </div>
