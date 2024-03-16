@@ -23,7 +23,7 @@ const Carousel = () => {
             <div className="bg-white w-[1000px] h-[900px] flex justify-center items-center gap-[30px] p-[50px] rounded-[10px] shadow-xl shadow-neutral-400">
               <div>
                 <img
-                  className="w-[600px] h-[328px]"
+                  className="w-[800px] h-[450px]"
                   src={item.fotoPaslon}
                   alt="Profil"
                 />
