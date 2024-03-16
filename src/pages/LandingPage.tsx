@@ -24,7 +24,7 @@ const LandingPage = () => {
 
               <div className="mt-20 ml-7">
                 <h1 className="text-[64px] text-white">SELAMAT DATANG</h1>
-                <p className="text-[24px] text-white text-wrap w-[500px] ">
+                <p className="text-[24px] text-white text-wrap w-[500px]">
                   PEMILU PRESIDEN DUMBWAYS.ID YANG JUJUR DIPILIH MELALUI SEBUAH
                   ARTI NAMA
                 </p>
@@ -41,11 +41,11 @@ const LandingPage = () => {
             <div className="grid grid-cols-3 gap-5">
               <div className="col-span-2 relative ">
                 <Link to="/detail">
-                  <img className="w-[753px] h-[390px]" src={SampleKpu} alt="" />
+                  <img className="w-[753px] h-[390px]" src={SampleKpu} alt=""/>
 
                   <div className="bg-gradient-to-t to-transparent from-black w-[753px] h-[390px] absolute left-0 bottom-0 "></div>
                   <div className="my-[10px] mx-[10px] absolute left-0 bottom-0">
-                    <button className="text-[20px] font-bold text-white bg-date py-1 px-3 rounded-[10px] ">
+                    <button className="text-[20px] font-bold text-white bg-date py-1 px-3 rounded-[10px]">
                       Senin, 03-Jan-2023
                     </button>
                     <p className="text-[32px] font-bold text-white leading-8 mt-[10px]">
@@ -60,9 +60,9 @@ const LandingPage = () => {
 
               <div className="bg-white">
                 <Link to="/detail">
-                  <img src={SampleKpu} alt="Sample" />
+                  <img src={SampleKpu} alt="Sample"/>
                 </Link>
-                <div className="my-[10px] mx-[10px] ">
+                <div className="my-[10px] mx-[10px]">
                   <button className="text-[20px] font-bold text-white bg-date py-1 px-3 rounded-[10px] ">
                     Senin, 03-Jan-2023
                   </button>
@@ -75,23 +75,7 @@ const LandingPage = () => {
 
               <div className="bg-white">
                 <Link to="/detail">
-                  <img src={SampleKpu} alt="Sample" />
-                </Link>
-
-                <div className="my-[10px] mx-[10px] ">
-                  <button className="text-[20px] font-bold text-white bg-date py-1 px-3 rounded-[10px] ">
-                    Senin, 03-Jan-2023
-                  </button>
-                  <p className="text-[32px] font-bold leading-8 mt-[10px]">
-                    KPU TETAPKAN 3 MENTOR TERBAIK
-                  </p>
-                  <p className="text-[24px] mt-[5px]">Super Admin</p>
-                </div>
-              </div>
-
-              <div className="bg-white">
-                <Link to="/detail">
-                  <img src={SampleKpu} alt="Sample" />
+                  <img src={SampleKpu} alt="Sample"/>
                 </Link>
 
                 <div className="my-[10px] mx-[10px] ">
@@ -108,6 +92,22 @@ const LandingPage = () => {
               <div className="bg-white">
                 <Link to="/detail">
                   <img src={SampleKpu} alt="Sample" />
+                </Link>
+
+                <div className="my-[10px] mx-[10px]">
+                  <button className="text-[20px] font-bold text-white bg-date py-1 px-3 rounded-[10px] ">
+                    Senin, 03-Jan-2023
+                  </button>
+                  <p className="text-[32px] font-bold leading-8 mt-[10px]">
+                    KPU TETAPKAN 3 MENTOR TERBAIK
+                  </p>
+                  <p className="text-[24px] mt-[5px]">Super Admin</p>
+                </div>
+              </div>
+
+              <div className="bg-white">
+                <Link to="/detail">
+                  <img src={SampleKpu} alt="Sample"/>
                 </Link>
 
                 <div className="my-[10px] mx-[10px] ">

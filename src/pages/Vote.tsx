@@ -23,7 +23,7 @@ const Vote = () => {
   return (
     <div>
       <body className="bg-white">
-        <Navbar textNav="PEMILU PRESIDEN DUMBWAYS.ID" listItem={DataListUser} />
+        <Navbar textNav="PEMILU PRESIDEN DUMBWAYS.ID" listItem={DataListUser}/>
 
         <main className="flex items-center justify-center flex-col">
           <h1 className="text-[48px] font-[700] mt-[50px] text-login">
@@ -98,14 +98,14 @@ const Vote = () => {
                 MASUKKAN SUARAMU
               </button>
             ) : (
-              <p className="uppercase text-text-merah text-[32px] font-[700] ">
+              <p className="uppercase text-text-merah text-[32px] font-[700]">
                 Anda sudah memilih !!!
               </p>
             )}
           </div>
           <Modal open={openVote} onClose={() => setOpenVote(false)}>
             <div className=" flex items-center justify-center flex-col">
-              <div className="w-[1000px] bg-white mt-[10px] px-[20px] pb-[10px] rounded-[20px] ">
+              <div className="w-[1000px] bg-white mt-[10px] px-[20px] pb-[10px] rounded-[20px]">
                 <h1 className="text-[32px] font-[700] text-login text-center">
                   MASUKAN PILIHANMU
                 </h1>
@@ -193,9 +193,9 @@ const Vote = () => {
           </Modal>
         </main>
 
-        <div className="bg-body w-full flex items-center justify-center ">
+        <div className="bg-body w-full flex items-center justify-center">
           <div className="mt-[50px] mb-[80px] h-[850px] w-[1140px] bg-body">
-            <p className="text-login text-[48px] font-[900] text-center ">
+            <p className="text-login text-[48px] font-[900] text-center">
               INFO PASLON
             </p>
 

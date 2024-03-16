@@ -65,7 +65,7 @@ const ListPaslon = () => {
                         <li>Mengadakan Perang Secara GRATIS tanpa batas.</li>
                       </ul>
                     </td>
-                    <td className="border border-line pb-[50px] ">
+                    <td className="border border-line pb-[50px]">
                       <ul className="list-disc text-left ml-7 text-[15px] font-[400]">
                         <li>Partai NAZI.</li>
                         <li>Partai Sosialis Nasional Jerman.</li>

@@ -14,7 +14,7 @@ const AddPaslon = () => {
         <h1 className="text-[48px] font-[700] mt-[50px] text-login">
           ADD PASLON
         </h1>
-        <div className="flex gap-[50px] w-[1140px] px-[100px] bg-white pt-[15px] mt-[50px] mb-[20px] ">
+        <div className="flex gap-[50px] w-[1140px] px-[100px] bg-white pt-[15px] mt-[50px] mb-[20px]">
           <div>
             <img
               className="w-[500px] h-[425px]"
@@ -25,7 +25,7 @@ const AddPaslon = () => {
 
           <div className="w-[500px]">
             <form action="">
-              <div className="flex flex-col gap-[20px] mb-[50px] ">
+              <div className="flex flex-col gap-[20px] mb-[50px]">
                 <div>
                   <Label text="Nama" htmlfor="text" />
                   <Input
@@ -38,7 +38,7 @@ const AddPaslon = () => {
                 </div>
 
                 <div>
-                  <Label text="Nomor Urut" htmlfor="nourut" />
+                  <Label text="Nomor Urut" htmlfor="nourut"/>
                   <Input
                     placeholder="Nomer Urut Paslon"
                     type="text"
@@ -49,7 +49,7 @@ const AddPaslon = () => {
                 </div>
 
                 <div>
-                  <Label text="Visi Misi" htmlfor="visimisi" />
+                  <Label text="Visi Misi" htmlfor="visimisi"/>
                   <textarea
                     className="border-solid border-[2px] h-[150px] border-black rounded-[10px] text-[20px] w-full px-[10px] py-[10px] placeholder: opacity-50"
                     name=""

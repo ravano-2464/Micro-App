@@ -37,13 +37,13 @@ const AddPartai = () => {
 
   return (
     <div>
-      <Navbar textNav="PEMILU PRESIDEN DUMBWAYS.ID" listItem={DataListAdmin} />
+      <Navbar textNav="PEMILU PRESIDEN DUMBWAYS.ID" listItem={DataListAdmin}/>
 
       <main className="flex items-center justify-center flex-col">
         <h1 className="text-[48px] font-[700] mt-[50px] text-login">
           ADD PARTAI
         </h1>
-        <div className="flex gap-[50px] w-[1140px] px-[100px] bg-white pt-[15px] mt-[50px] mb-[20px] ">
+        <div className="flex gap-[50px] w-[1140px] px-[100px] bg-white pt-[15px] mt-[50px] mb-[20px]">
           <div>
             <img
               className="w-[500px] h-[640px]"
@@ -54,7 +54,7 @@ const AddPartai = () => {
 
           <div className="w-[500px]">
             <form onSubmit={saveParties}>
-              <div className="flex flex-col gap-[20px] mb-[50px] ">
+              <div className="flex flex-col gap-[20px] mb-[50px]">
                 <div>
                   <Label text="Nama" htmlfor="nama" />
                   <Input
@@ -67,7 +67,7 @@ const AddPartai = () => {
                 </div>
 
                 <div>
-                  <Label text="Ketua Umum" htmlfor="ketum" />
+                  <Label text="Ketua Umum" htmlfor="ketum"/>
                   <Input
                     placeholder=""
                     onchange={getInput}
@@ -78,7 +78,7 @@ const AddPartai = () => {
                 </div>
 
                 <div>
-                  <Label text="Image" htmlfor="image" />
+                  <Label text="Image" htmlfor="image"/>
                   <Input
                     placeholder=""
                     onchange={getInput}
@@ -89,7 +89,7 @@ const AddPartai = () => {
                 </div>
 
                 <div>
-                  <Label text="Visi Misi" htmlfor="visimisi" />
+                  <Label text="Visi Misi" htmlfor="visimisi"/>
                   <input
                     type="text"
                     name="vision_mission"
@@ -100,7 +100,7 @@ const AddPartai = () => {
                 </div>
 
                 <div>
-                  <Label text="Alamat" htmlfor="alamat" />
+                  <Label text="Alamat" htmlfor="alamat"/>
                   <input
                     type="text"
                     name="parties_address"

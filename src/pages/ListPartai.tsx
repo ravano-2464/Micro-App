@@ -63,7 +63,7 @@ const ListPartai = () => {
               <tbody className="border borde-line">
                 {parties.map((item: any, index) => (
                   <tr key={index}>
-                    <td className="border border-line ">{item.id}</td>
+                    <td className="border border-line">{item.id}</td>
                     <td className="border border-line">
                       <img
                         src={Logo}
@@ -71,22 +71,22 @@ const ListPartai = () => {
                         alt="Logo"
                       />
                     </td>
-                    <td className="border border-line ">
+                    <td className="border border-line">
                       <p className="text-black font-[400] text-[16px]">
                         {item.parties_chairman}
                       </p>
                     </td>
-                    <td className="border border-line ">
+                    <td className="border border-line">
                       <ul className="text-[16px] font-[400]">
                         <p>{item.vision_mission}</p>
                       </ul>
                     </td>
-                    <td className="border border-line  pl-3 ">
+                    <td className="border border-line  pl-3">
                       <p className="text-black font-[400] text-[16px]">
                         {item.parties_address}
                       </p>
                     </td>
-                    <td className="border border-line ">
+                    <td className="border border-line">
                       <div className="flex justify-center items-center gap-[10px]">
                         <Link
                           to={`/editpartai/${item.id}`}
