@@ -46,7 +46,7 @@ const Register = (props: InterfaceRegister) => {
                 <Input
                   onchange={getInput}
                   id="fullname"
-                  placeholder="Your FullName"
+                  placeholder="Your Fullname"
                   type="text"
                   name="fullname"
                 />
