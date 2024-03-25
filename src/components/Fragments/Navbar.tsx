@@ -63,7 +63,7 @@ const Navbar = (props: InterfaceNavbar) => {
           ) : (
             <div className="flex items-center">
               <button className="bg-white text-xl font-[700] h-11 w-11 flex justify-center items-center rounded-full ml-5">
-                A
+                R
               </button>
             </div>
           )}
