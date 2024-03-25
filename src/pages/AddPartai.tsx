@@ -20,7 +20,7 @@ const AddPartai = () => {
   const saveParties = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/v1/parties", value);
+      await axios.post("http://localhost:5000/api/parties", value);
 
       navigate("/listpartai");
     } catch (error) {

@@ -13,7 +13,7 @@ const ListPartai = () => {
 
   const fetchParties = async () => {
     try {
-      const { data } = await axios.get("http://localhost:5000/api/v1/parties");
+      const { data } = await axios.get("http://localhost:5000/api/parties");
       // console.log(data);
       setParties(data);
     } catch (error) {

@@ -16,7 +16,7 @@ const Register = (props: InterfaceRegister) => {
   const saveUser = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/v1/user", value);
+      await axios.post("http://localhost:5000/api/user", value);
     } catch (error) {
       console.log(error);
     }
@@ -46,7 +46,7 @@ const Register = (props: InterfaceRegister) => {
                 <Input
                   onchange={getInput}
                   id="fullname"
-                  placeholder="Aris Kiflan"
+                  placeholder="Your FullName"
                   type="text"
                   name="fullname"
                 />
@@ -78,7 +78,7 @@ const Register = (props: InterfaceRegister) => {
                 <Label text="Username" htmlfor="usernameregist" />
                 <Input
                   onchange={getInput}
-                  placeholder="Example@mail.com"
+                  placeholder="Example@email.com"
                   type="text"
                   name="username"
                   id="usernameregist"

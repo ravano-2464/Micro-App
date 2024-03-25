@@ -18,7 +18,7 @@ const DeletePartai = (props: PartiesValue) => {
 
   const deleteParties = async (id: number) => {
     try {
-      await axios.delete(`http://localhost:5000/api/v1/parties/${id}`);
+      await axios.delete(`http://localhost:5000/api/parties/${id}`);
       props.setParties();
       setOpenDelete(false);
     } catch (error) {

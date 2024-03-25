@@ -20,7 +20,7 @@ const EditPartai = () => {
   const updateParties = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      await axios.patch(`http://localhost:5000/api/v1/parties/${id}`, value);
+      await axios.patch(`http://localhost:5000/api/parties/${id}`, value);
 
       navigate("/listpartai");
     } catch (error) {
@@ -38,7 +38,7 @@ const EditPartai = () => {
   const getPartiesById = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/v1/parties/${id}`
+        `http://localhost:5000/api/parties/${id}`
       );
       setValue(data);
     } catch (error) {
