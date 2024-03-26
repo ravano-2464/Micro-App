@@ -10,6 +10,7 @@ export default new (class CandidateService {
         candidate_name: reqBody.candidate_name,
         serial_number: reqBody.serial_number,
         vision_mission: reqBody.vision_mission,
+        candidate_image: reqBody.candidate_image,
       });
 
       await this.repository
@@ -72,6 +73,7 @@ export default new (class CandidateService {
       candidate_name: string;
       serial_number: number;
       vision_mission: string;
+      candidate_image: string;
     },
     id: number
   ): Promise<any> {
@@ -83,6 +85,7 @@ export default new (class CandidateService {
           candidate_name: body.candidate_name,
           serial_number: body.serial_number,
           vision_mission: body.vision_mission,
+          candidate_image: body.candidate_image,
         })
         .where("id = :id", { id: id })
         .execute();

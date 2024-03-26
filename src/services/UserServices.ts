@@ -40,6 +40,19 @@ export default new (class UserService {
     }
   }
 
+  //////////////// GET /////////////////
+  async getOne(id: number): Promise<any> {
+    try {
+      const user = await this.repository
+        .createQueryBuilder("user")
+        .where("parties.id = :id", { id: id })
+        .getOne();
+      return user;
+    } catch (error) {
+      throw error;
+    }
+  }
+
   //////////////// DELETE /////////////////
   async delete(id: number): Promise<any> {
     try {

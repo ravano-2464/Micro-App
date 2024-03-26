@@ -8,15 +8,15 @@ import {
 import { Article } from "./Article";
 import { Vote } from "./Vote";
 
-export enum Gender {
-  Male = "Laki - Laki",
-  Female = "Perempuan",
-}
+// export enum GenderType {
+//   MALE = "Male",
+//   FEMALE = "Female",
+// }
 
-export enum Roles {
-  Admin = "Admin",
-  User = "User",
-}
+// export enum RolesType {
+//   ADMIN = "Admin",
+//   USER = "User",
+// }
 
 @Entity()
 export class User {
@@ -29,12 +29,15 @@ export class User {
   @Column()
   address: string;
 
-  @Column({
-    type: "enum",
-    enum: Gender,
-    default: Gender.Male,
-  })
-  gender: Gender;
+  // @Column({
+  //   type: "enum",
+  //   enum: GenderType,
+  //   default: GenderType.MALE,
+  // })
+  // gender: string;
+
+  @Column()
+  gender: string;
 
   @Column()
   username: string;
@@ -42,16 +45,19 @@ export class User {
   @Column()
   password: string;
 
-  @Column({
-    type: "enum",
-    enum: Roles,
-    default: Roles.Admin,
-  })
-  role: Roles;
+  // @Column({
+  //   type: "enum",
+  //   enum: RolesType,
+  //   default: RolesType.ADMIN,
+  // })
+  // role: string;
+
+  @Column()
+  role: string;
 
   @OneToMany(() => Article, (article) => article.user)
   article: Article[];
 
-  @OneToOne(() => Vote, (vote) => vote.user) 
+  @OneToOne(() => Vote, (vote) => vote.user) // specify inverse side as a second parameter
   vote: Vote;
 }

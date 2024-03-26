@@ -26,8 +26,8 @@ export class Article {
   @CreateDateColumn()
   createdDate: Date;
 
-  @Column({ name: "user_id" })
-  userId: number;
+  @Column()
+  user_id: number;
 
   @ManyToOne(() => User, (user) => user.article)
   @JoinColumn({ name: "user_id", referencedColumnName: "id" })

@@ -3,6 +3,7 @@ import UserControllers from "../controllers/UserControllers";
 import ArticleControllers from "../controllers/ArticleControllers";
 import CandidateController from "../controllers/CandidateController";
 import VoteControllers from "../controllers/VoteControllers";
+import PartiesControllers from "../controllers/PartiesControllers";
 
 const Route = express.Router();
 
@@ -11,6 +12,7 @@ Route.post("/user", UserControllers.create);
 Route.get("/user", UserControllers.find);
 Route.delete("/user/:id", UserControllers.delete);
 Route.patch("/user/:id", UserControllers.update);
+Route.patch("/user/:id", UserControllers.getOne);
 
 //////////////// ARTICLE /////////////////
 Route.post("/article", ArticleControllers.create);
@@ -32,5 +34,12 @@ Route.get("/vote", VoteControllers.find);
 Route.delete("/vote/:id", VoteControllers.delete);
 Route.patch("/vote/:id", VoteControllers.update);
 Route.get("/vote/:id", VoteControllers.getOne);
+
+//////////////// PARTIES /////////////////
+Route.post("/parties", PartiesControllers.create);
+Route.get("/parties", PartiesControllers.find);
+Route.delete("/parties/:id", PartiesControllers.delete);
+Route.patch("/parties/:id", PartiesControllers.update);
+Route.get("/parties/:id", PartiesControllers.getOne);
 
 export default Route;

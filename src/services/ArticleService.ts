@@ -11,11 +11,11 @@ export default new (class ArticleService {
         image: reqBody.image,
         content: reqBody.content,
         createdDate: reqBody.createdDate,
-        userId: reqBody.userId,
+        user_id: reqBody.user_id,
       });
 
       await this.repository
-        .createQueryBuilder()
+        .createQueryBuilder("article")
         .insert()
         .into(Article)
         .values(article)
@@ -32,6 +32,7 @@ export default new (class ArticleService {
     try {
       const article = await this.repository
         .createQueryBuilder("article")
+        .leftJoinAndSelect("article.user", "user")
         .getMany();
       return article;
     } catch (error) {
@@ -76,7 +77,7 @@ export default new (class ArticleService {
       image: string;
       content: string;
       createdDate: Date;
-      userId: number;
+      user_id: number;
     },
     id: number
   ): Promise<any> {
@@ -89,7 +90,7 @@ export default new (class ArticleService {
           image: body.image,
           content: body.content,
           createdDate: body.createdDate,
-          userId: body.userId,
+          user_id: body.user_id,
         })
         .where("id = :id", { id: id })
         .execute();

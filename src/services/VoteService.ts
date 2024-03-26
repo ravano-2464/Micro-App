@@ -27,7 +27,11 @@ export default new (class VoteService {
   //////////////// FIND /////////////////
   async find(): Promise<any> {
     try {
-      const vote = await this.repository.createQueryBuilder("vote").getMany();
+      const vote = await this.repository
+        .createQueryBuilder("vote")
+        .leftJoinAndSelect("vote.user", "user")
+        .leftJoinAndSelect("vote.candidate", "candidate")
+        .getMany();
       return vote;
     } catch (error) {
       throw error;
@@ -54,6 +58,8 @@ export default new (class VoteService {
     try {
       const deleteVote = await this.repository
         .createQueryBuilder()
+        .leftJoinAndSelect("vote.user", "user")
+        .leftJoinAndSelect("vote.candidate", "candidate")
         .delete()
         .where("id = :id", { id: id })
         .execute();

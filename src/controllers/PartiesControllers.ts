@@ -1,23 +1,22 @@
-import { Request, Response } from "express";
-import ArticleService from "../services/ArticleService";
-import { articleValidator } from "../validator/ArticleValidator";
+// Controllers for logical system application
 
-export default new (class ArticleControllers {
+import { Request, Response } from "express";
+import PartiesService from "../services/PartiesService";
+import { partiesValidator } from "../validator/PartiesValidator";
+
+export default new (class PartiesControllers {
   ///////////////// CREATE /////////////////
   async create(req: Request, res: Response): Promise<Response> {
     try {
       const data = req.body;
-
-      const { error, value } = articleValidator.validate(data);
+      const { error, value } = partiesValidator.validate(data);
 
       if (error)
         return res.status(400).json({ message: error.details[0].message });
 
-      await ArticleService.create(value);
+      const parties = await PartiesService.create(value);
 
-      return res
-        .status(200)
-        .json({ message: "Create data Article Success", data });
+      return res.status(201).json(parties);
     } catch (error) {
       return res
         .status(500)
@@ -28,9 +27,9 @@ export default new (class ArticleControllers {
   ///////////////// FIND /////////////////
   async find(req: Request, res: Response): Promise<Response> {
     try {
-      const article = await ArticleService.find();
+      const parties = await PartiesService.find();
 
-      return res.status(200).json(article);
+      return res.status(200).json(parties);
     } catch (error) {
       return res
         .status(500)
@@ -42,9 +41,9 @@ export default new (class ArticleControllers {
   async getOne(req: Request, res: Response): Promise<Response> {
     try {
       const id = parseInt(req.params.id);
-      const article = await ArticleService.getOne(id);
+      const parties = await PartiesService.getOne(id);
 
-      return res.status(200).json(article);
+      return res.status(200).json(parties);
     } catch (error) {
       return res
         .status(500)
@@ -56,8 +55,8 @@ export default new (class ArticleControllers {
   async delete(req: Request, res: Response): Promise<Response> {
     try {
       const id = parseInt(req.params.id);
-      await ArticleService.delete(id);
-      return res.status(200).json({ message: "Delete Article Success" });
+      await PartiesService.delete(id);
+      return res.status(200).json({ message: "Delete parties Success" });
     } catch (error) {
       return res
         .status(500)
@@ -70,10 +69,10 @@ export default new (class ArticleControllers {
     try {
       const id = parseInt(req.params.id);
       const { body } = req;
-      await ArticleService.update(body, id);
+      await PartiesService.update(body, id);
       return res
         .status(200)
-        .json({ message: "Update Article Success", data: { id: id, ...body } });
+        .json({ message: "Update Parties Success", data: { id: id, ...body } });
     } catch (error) {
       return res
         .status(500)
