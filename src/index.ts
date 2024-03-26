@@ -14,6 +14,6 @@ AppDataSource.initialize()
       res.status(200).json({ data: "succsess get data" });
     });
 
-    app.listen(port, () => console.log(`server succsess on port ${port}`));
+    app.listen(port, () => console.log(`Server Successfully Running On Port ${port}`));
   })
   .catch((error) => console.log(error));
